@@ -1,0 +1,1377 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'discord.js' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 warn package.json CleetusBot@1.0.0 No description
+5 warn package.json CleetusBot@1.0.0 No repository field.
+6 warn package.json CleetusBot@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'discord.js@^11.5.1', null ]
+9 verbose cache add name=undefined spec="discord.js@^11.5.1" args=["discord.js@^11.5.1",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'discord.js@^11.5.1',
+10 verbose parsed url   path: 'discord.js@^11.5.1',
+10 verbose parsed url   href: 'discord.js@^11.5.1' }
+11 verbose cache add name="discord.js" spec="^11.5.1" args=["discord.js","^11.5.1"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '^11.5.1',
+12 verbose parsed url   path: '^11.5.1',
+12 verbose parsed url   href: '^11.5.1' }
+13 verbose addNamed [ 'discord.js', '^11.5.1' ]
+14 verbose addNamed [ null, '>=11.5.1-0 <12.0.0-0' ]
+15 silly lockFile cad6b260-discord-js-11-5-1 discord.js@^11.5.1
+16 verbose lock discord.js@^11.5.1 /root/.npm/cad6b260-discord-js-11-5-1.lock
+17 silly addNameRange { name: 'discord.js',
+17 silly addNameRange   range: '>=11.5.1-0 <12.0.0-0',
+17 silly addNameRange   hasData: false }
+18 verbose request where is /discord.js
+19 verbose request registry https://registry.npmjs.org/
+20 verbose request id e9ef7636055ed772
+21 verbose url raw /discord.js
+22 verbose url resolving [ 'https://registry.npmjs.org/', './discord.js' ]
+23 verbose url resolved https://registry.npmjs.org/discord.js
+24 verbose request where is https://registry.npmjs.org/discord.js
+25 info trying registry request attempt 1 at 03:51:15
+26 verbose etag W/"df84b382a4291d4c53ad4f759f8c73a1"
+27 http GET https://registry.npmjs.org/discord.js
+28 http 304 https://registry.npmjs.org/discord.js
+29 silly registry.get cb [ 304,
+29 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:15 GMT',
+29 silly registry.get     connection: 'keep-alive',
+29 silly registry.get     'set-cookie': [ '__cfduid=d3b063a158063986ccea51e4d31adc59a1571370675; expires=Sat, 17-Oct-20 03:51:15 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+29 silly registry.get     'cf-cache-status': 'HIT',
+29 silly registry.get     'cache-control': 'max-age=300',
+29 silly registry.get     'cf-ray': '52778d819a0fe849-EWR',
+29 silly registry.get     age: '2397',
+29 silly registry.get     etag: '"df84b382a4291d4c53ad4f759f8c73a1"',
+29 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+29 silly registry.get     'last-modified': 'Fri, 14 Jun 2019 16:23:40 GMT',
+29 silly registry.get     vary: 'accept-encoding, accept',
+29 silly registry.get     'x-amz-meta-rev': '205-9359645395e467a1b8c8ba3596c39f33',
+29 silly registry.get     server: 'cloudflare' } ]
+30 verbose etag https://registry.npmjs.org/discord.js from cache
+31 silly addNameRange number 2 { name: 'discord.js',
+31 silly addNameRange   range: '>=11.5.1-0 <12.0.0-0',
+31 silly addNameRange   hasData: true }
+32 silly addNameRange versions [ 'discord.js',
+32 silly addNameRange   [ '1.0.1',
+32 silly addNameRange     '1.0.2',
+32 silly addNameRange     '1.1.0',
+32 silly addNameRange     '1.2.1',
+32 silly addNameRange     '1.2.2',
+32 silly addNameRange     '2.0.0',
+32 silly addNameRange     '2.0.1',
+32 silly addNameRange     '2.0.2',
+32 silly addNameRange     '2.1.0',
+32 silly addNameRange     '2.1.1',
+32 silly addNameRange     '2.2.0',
+32 silly addNameRange     '2.2.1',
+32 silly addNameRange     '2.2.2',
+32 silly addNameRange     '2.3.0',
+32 silly addNameRange     '2.3.1',
+32 silly addNameRange     '2.4.0',
+32 silly addNameRange     '2.4.1',
+32 silly addNameRange     '2.4.2',
+32 silly addNameRange     '2.5.0',
+32 silly addNameRange     '2.6.0',
+32 silly addNameRange     '2.6.1',
+32 silly addNameRange     '2.6.2',
+32 silly addNameRange     '2.6.3',
+32 silly addNameRange     '2.6.4',
+32 silly addNameRange     '2.6.5',
+32 silly addNameRange     '2.6.6',
+32 silly addNameRange     '2.6.7',
+32 silly addNameRange     '2.6.8',
+32 silly addNameRange     '2.7.0',
+32 silly addNameRange     '2.7.1',
+32 silly addNameRange     '2.7.2',
+32 silly addNameRange     '3.0.0',
+32 silly addNameRange     '3.0.1',
+32 silly addNameRange     '3.0.2',
+32 silly addNameRange     '3.0.3',
+32 silly addNameRange     '3.1.1',
+32 silly addNameRange     '3.1.2',
+32 silly addNameRange     '3.1.3',
+32 silly addNameRange     '3.1.4',
+32 silly addNameRange     '3.1.5',
+32 silly addNameRange     '3.1.6',
+32 silly addNameRange     '3.2.0',
+32 silly addNameRange     '3.2.1',
+32 silly addNameRange     '3.3.0',
+32 silly addNameRange     '3.3.1',
+32 silly addNameRange     '3.3.2',
+32 silly addNameRange     '3.3.3',
+32 silly addNameRange     '3.3.4',
+32 silly addNameRange     '3.4.0',
+32 silly addNameRange     '3.4.1',
+32 silly addNameRange     '3.4.2',
+32 silly addNameRange     '3.5.0',
+32 silly addNameRange     '3.6.0',
+32 silly addNameRange     '3.6.1',
+32 silly addNameRange     '3.6.2',
+32 silly addNameRange     '3.6.3',
+32 silly addNameRange     '3.7.0',
+32 silly addNameRange     '3.7.1',
+32 silly addNameRange     '3.7.2',
+32 silly addNameRange     '3.8.0',
+32 silly addNameRange     '3.8.1',
+32 silly addNameRange     '3.8.2',
+32 silly addNameRange     '3.8.3',
+32 silly addNameRange     '3.9.0',
+32 silly addNameRange     '3.9.1',
+32 silly addNameRange     '3.10.0',
+32 silly addNameRange     '3.10.1',
+32 silly addNameRange     '3.10.2',
+32 silly addNameRange     '4.0.0',
+32 silly addNameRange     '4.1.0',
+32 silly addNameRange     '4.1.1',
+32 silly addNameRange     '5.0.0',
+32 silly addNameRange     '5.0.1',
+32 silly addNameRange     '5.1.0',
+32 silly addNameRange     '5.2.0',
+32 silly addNameRange     '5.3.0',
+32 silly addNameRange     '5.3.1',
+32 silly addNameRange     '5.3.2',
+32 silly addNameRange     '6.0.0',
+32 silly addNameRange     '6.1.0',
+32 silly addNameRange     '7.0.0',
+32 silly addNameRange     '7.0.1',
+32 silly addNameRange     '8.0.0',
+32 silly addNameRange     '8.1.0',
+32 silly addNameRange     '9.0.0',
+32 silly addNameRange     '9.0.1',
+32 silly addNameRange     '9.0.2',
+32 silly addNameRange     '9.1.0',
+32 silly addNameRange     '9.1.1',
+32 silly addNameRange     '9.2.0',
+32 silly addNameRange     '9.3.0',
+32 silly addNameRange     '8.2.0',
+32 silly addNameRange     '9.3.1',
+32 silly addNameRange     '10.0.0',
+32 silly addNameRange     '10.0.1',
+32 silly addNameRange     '11.0.0',
+32 silly addNameRange     '11.1.0',
+32 silly addNameRange     '11.2.0',
+32 silly addNameRange     '11.2.1',
+32 silly addNameRange     '11.3.0',
+32 silly addNameRange     '11.3.1',
+32 silly addNameRange     '11.3.2',
+32 silly addNameRange     '11.4.0',
+32 silly addNameRange     '11.4.1',
+32 silly addNameRange     '11.4.2',
+32 silly addNameRange     '11.5.0',
+32 silly addNameRange     '11.5.1' ] ]
+33 verbose addNamed [ 'discord.js', '11.5.1' ]
+34 verbose addNamed [ '11.5.1', '11.5.1' ]
+35 silly lockFile b6ed1220-discord-js-11-5-1 discord.js@11.5.1
+36 verbose lock discord.js@11.5.1 /root/.npm/b6ed1220-discord-js-11-5-1.lock
+37 silly lockFile b6ed1220-discord-js-11-5-1 discord.js@11.5.1
+38 silly lockFile b6ed1220-discord-js-11-5-1 discord.js@11.5.1
+39 silly lockFile cad6b260-discord-js-11-5-1 discord.js@^11.5.1
+40 silly lockFile cad6b260-discord-js-11-5-1 discord.js@^11.5.1
+41 silly resolved [ { name: 'discord.js',
+41 silly resolved     version: '11.5.1',
+41 silly resolved     description: 'A powerful library for interacting with the Discord API',
+41 silly resolved     main: './src/index',
+41 silly resolved     types: './typings/index.d.ts',
+41 silly resolved     scripts:
+41 silly resolved      { test: 'npm run lint && npm run docs:test',
+41 silly resolved        docs: 'docgen --source src --custom docs/index.yml --output docs/docs.json',
+41 silly resolved        'docs:test': 'docgen --source src --custom docs/index.yml',
+41 silly resolved        lint: 'eslint src',
+41 silly resolved        'lint:fix': 'eslint --fix src',
+41 silly resolved        'lint:typings': 'tslint typings/index.d.ts typings/discord.js-test.ts',
+41 silly resolved        webpack: 'parallel-webpack' },
+41 silly resolved     repository:
+41 silly resolved      { type: 'git',
+41 silly resolved        url: 'git+https://github.com/discordjs/discord.js.git' },
+41 silly resolved     keywords: [ 'discord', 'api', 'bot', 'client', 'node', 'discordapp' ],
+41 silly resolved     author: { name: 'Amish Shah', email: 'amishshah.2k@gmail.com' },
+41 silly resolved     license: 'Apache-2.0',
+41 silly resolved     bugs: { url: 'https://github.com/discordjs/discord.js/issues' },
+41 silly resolved     homepage: 'https://github.com/discordjs/discord.js#readme',
+41 silly resolved     runkitExampleFilename: './docs/examples/ping.js',
+41 silly resolved     dependencies:
+41 silly resolved      { long: '^4.0.0',
+41 silly resolved        'prism-media': '^0.0.3',
+41 silly resolved        snekfetch: '^3.6.4',
+41 silly resolved        tweetnacl: '^1.0.0',
+41 silly resolved        ws: '^6.0.0' },
+41 silly resolved     peerDependencies:
+41 silly resolved      { bufferutil: '^4.0.0',
+41 silly resolved        erlpack: 'discordapp/erlpack',
+41 silly resolved        'libsodium-wrappers': '^0.7.3',
+41 silly resolved        'node-opus': '^0.2.7',
+41 silly resolved        opusscript: '^0.0.6',
+41 silly resolved        sodium: '^2.0.3',
+41 silly resolved        '@discordjs/uws': '^10.149.0' },
+41 silly resolved     peerDependenciesMeta:
+41 silly resolved      { bufferutil: [Object],
+41 silly resolved        erlpack: [Object],
+41 silly resolved        'node-opus': [Object],
+41 silly resolved        opusscript: [Object],
+41 silly resolved        sodium: [Object],
+41 silly resolved        'libsodium-wrappers': [Object],
+41 silly resolved        uws: [Object] },
+41 silly resolved     devDependencies:
+41 silly resolved      { '@types/node': '^9.4.6',
+41 silly resolved        'discord.js-docgen': 'discordjs/docgen',
+41 silly resolved        eslint: '^5.4.0',
+41 silly resolved        'parallel-webpack': '^2.3.0',
+41 silly resolved        tslint: '^3.15.1',
+41 silly resolved        'tslint-config-typings': '^0.2.4',
+41 silly resolved        typescript: '^3.0.1',
+41 silly resolved        'uglifyjs-webpack-plugin': '^1.3.0',
+41 silly resolved        webpack: '^4.17.0' },
+41 silly resolved     engines: { node: '>=6.0.0' },
+41 silly resolved     browser:
+41 silly resolved      { ws: false,
+41 silly resolved        uws: false,
+41 silly resolved        '@discordjs/uws': false,
+41 silly resolved        erlpack: false,
+41 silly resolved        'prism-media': false,
+41 silly resolved        opusscript: false,
+41 silly resolved        'node-opus': false,
+41 silly resolved        tweetnacl: false,
+41 silly resolved        sodium: false,
+41 silly resolved        'src/sharding/Shard.js': false,
+41 silly resolved        'src/sharding/ShardClientUtil.js': false,
+41 silly resolved        'src/sharding/ShardingManager.js': false,
+41 silly resolved        'src/client/voice/dispatcher/StreamDispatcher.js': false,
+41 silly resolved        'src/client/voice/opus/BaseOpusEngine.js': false,
+41 silly resolved        'src/client/voice/opus/NodeOpusEngine.js': false,
+41 silly resolved        'src/client/voice/opus/OpusEngineList.js': false,
+41 silly resolved        'src/client/voice/opus/OpusScriptEngine.js': false,
+41 silly resolved        'src/client/voice/pcm/ConverterEngine.js': false,
+41 silly resolved        'src/client/voice/pcm/ConverterEngineList.js': false,
+41 silly resolved        'src/client/voice/pcm/FfmpegConverterEngine.js': false,
+41 silly resolved        'src/client/voice/player/AudioPlayer.js': false,
+41 silly resolved        'src/client/voice/receiver/VoiceReadable.js': false,
+41 silly resolved        'src/client/voice/receiver/VoiceReceiver.js': false,
+41 silly resolved        'src/client/voice/util/Secretbox.js': false,
+41 silly resolved        'src/client/voice/util/SecretKey.js': false,
+41 silly resolved        'src/client/voice/util/VolumeInterface.js': false,
+41 silly resolved        'src/client/voice/ClientVoiceManager.js': false,
+41 silly resolved        'src/client/voice/VoiceBroadcast.js': false,
+41 silly resolved        'src/client/voice/VoiceConnection.js': false,
+41 silly resolved        'src/client/voice/VoiceUDPClient.js': false,
+41 silly resolved        'src/client/voice/VoiceWebSocket.js': false },
+41 silly resolved     licenseText: '                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      "License" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      "Licensor" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      "Legal Entity" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      "control" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      "You" (or "Your") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      "Source" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      "Object" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      "Work" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      "Derivative Works" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      "Contribution" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, "submitted"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as "Not a Contribution."\n\n      "Contributor" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a "NOTICE" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an "AS IS" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   Copyright 2017 Amish Shah\n\n   Licensed under the Apache License, Version 2.0 (the "License");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an "AS IS" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n',
+41 silly resolved     _id: 'discord.js@11.5.1',
+41 silly resolved     dist:
+41 silly resolved      { shasum: '910fb9f6410328581093e044cafb661783a4d9e8',
+41 silly resolved        integrity: 'sha512-tGhV5xaZXE3Z+4uXJb3hYM6gQ1NmnSxp9PClcsSAYFVRzH6AJH74040mO3afPDMWEAlj8XsoPXXTJHTxesqcGw==',
+41 silly resolved        tarball: 'https://registry.npmjs.org/discord.js/-/discord.js-11.5.1.tgz',
+41 silly resolved        fileCount: 181,
+41 silly resolved        unpackedSize: 702371,
+41 silly resolved        'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc7uoyCRA9TVsSAnZWagAA/8QP/3ppTesg15Y3dnEvR4t6\nYIHshsOoIDFiySukzLUemAxr5XQNmkpYme8WKTK0Dz+sWTmcQRXTrjwqJaTF\ngm6Uk6YhANRk7fNcuITE5Y6CFRCKX/0eyC1ihZ2fp5xLPR9iU1detpsSEvvz\nXHYpZKclBYRQ68W9ixWumAGHu9hIgysP1bdcSqacjDfnkEl7pY07AjPsEAo5\nygtpD3ejbsanmCb42UL7ujd9retBiis6I8cjs6YRSU4nac0zHCwZnv7S2wnG\nakha5ZC++upQuApjlrulv1YsZEPLXkhMagRP2ct4apA8S4gid1txsM6V4XFS\nGgi/iIjqwp7Hr/wddwWUffzaACN0j37rXwPDfLgF179GF0vLehIEF0IVUuoE\nVyW/sJTGryZ1k0y3id6MTwvcxuXyKTmukfVw5HhFlAYLDQh3GNyoHF3W1B/Y\nlBi6L8pCJlZ8Q+0DWPFT4uAlARKJxaozz/Fp9gpwhlkf4+t+Iew6MxT8CS1f\nPBERGL8nQifR4+lJRYRFkGlEtfAOodKmrcSavWN3zTpzkBoLpxbrfGmj6JKm\nemQkMezDHQ5B7EfHwYXhCotiQ8tnFkCBBNYZ/Jbh2jpAvUzEx8/Rs4DlJW1w\nYICsrqmTcYiqB5u2ALf1SxgSKH0LNeRwJgyIkgdYHaQcSfDisPgn10grNJ8V\nvZCj\r\n=3N3p\r\n-----END PGP SIGNATURE-----\r\n' },
+41 silly resolved     maintainers: [ [Object], [Object] ],
+41 silly resolved     _npmUser: { name: 'hydrabolt', email: 'amishshah.2k@gmail.com' },
+41 silly resolved     directories: {},
+41 silly resolved     _npmOperationalInternal:
+41 silly resolved      { host: 's3://npm-registry-packages',
+41 silly resolved        tmp: 'tmp/discord.js_11.5.1_1559161393772_0.5958840110254806' },
+41 silly resolved     _hasShrinkwrap: false,
+41 silly resolved     _shasum: '910fb9f6410328581093e044cafb661783a4d9e8',
+41 silly resolved     _from: 'discord.js@^11.5.1',
+41 silly resolved     _resolved: 'https://registry.npmjs.org/discord.js/-/discord.js-11.5.1.tgz',
+41 silly resolved     readme: 'ERROR: No README data found!' } ]
+42 info install discord.js@11.5.1 into /home/pi/CleetusBot
+43 info installOne discord.js@11.5.1
+44 warn engine discord.js@11.5.1: wanted: {"node":">=6.0.0"} (current: {"node":"0.10.29","npm":"1.4.21"})
+45 verbose node_modules/discord.js unbuild
+46 verbose tar unpack /root/.npm/discord.js/11.5.1/package.tgz
+47 silly lockFile b33f0658-eetusBot-node-modules-discord-js tar:///home/pi/CleetusBot/node_modules/discord.js
+48 verbose lock tar:///home/pi/CleetusBot/node_modules/discord.js /root/.npm/b33f0658-eetusBot-node-modules-discord-js.lock
+49 silly lockFile e294163a-pm-discord-js-11-5-1-package-tgz tar:///root/.npm/discord.js/11.5.1/package.tgz
+50 verbose lock tar:///root/.npm/discord.js/11.5.1/package.tgz /root/.npm/e294163a-pm-discord-js-11-5-1-package-tgz.lock
+51 silly gunzTarPerm modes [ '755', '644' ]
+52 silly gunzTarPerm extractEntry
+53 silly gunzTarPerm modified mode [ '', 438, 493 ]
+54 silly gunzTarPerm extractEntry .tern-project
+55 silly gunzTarPerm modified mode [ '.tern-project', 438, 420 ]
+56 silly gunzTarPerm extractEntry browser.js
+57 silly gunzTarPerm modified mode [ 'browser.js', 438, 420 ]
+58 silly gunzTarPerm extractEntry LICENSE
+59 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+60 silly gunzTarPerm extractEntry package.json
+61 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+62 silly gunzTarPerm extractEntry README.md
+63 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+64 silly gunzTarPerm extractEntry src
+65 silly gunzTarPerm modified mode [ 'src', 438, 493 ]
+66 silly gunzTarPerm extractEntry typings
+67 silly gunzTarPerm modified mode [ 'typings', 438, 493 ]
+68 silly gunzTarPerm extractEntry src/client
+69 silly gunzTarPerm modified mode [ 'src/client', 438, 493 ]
+70 silly gunzTarPerm extractEntry src/index.js
+71 silly gunzTarPerm modified mode [ 'src/index.js', 438, 420 ]
+72 silly gunzTarPerm extractEntry src/sharding
+73 silly gunzTarPerm modified mode [ 'src/sharding', 438, 493 ]
+74 silly gunzTarPerm extractEntry src/structures
+75 silly gunzTarPerm modified mode [ 'src/structures', 438, 493 ]
+76 silly gunzTarPerm extractEntry src/util
+77 silly gunzTarPerm modified mode [ 'src/util', 438, 493 ]
+78 silly gunzTarPerm extractEntry typings/discord.js-test.ts
+79 silly gunzTarPerm modified mode [ 'typings/discord.js-test.ts', 438, 420 ]
+80 silly gunzTarPerm extractEntry typings/index.d.ts
+81 silly gunzTarPerm modified mode [ 'typings/index.d.ts', 438, 420 ]
+82 silly gunzTarPerm extractEntry src/client/actions
+83 silly gunzTarPerm modified mode [ 'src/client/actions', 438, 493 ]
+84 silly gunzTarPerm extractEntry src/client/Client.js
+85 silly gunzTarPerm modified mode [ 'src/client/Client.js', 438, 420 ]
+86 silly gunzTarPerm extractEntry src/client/ClientDataManager.js
+87 silly gunzTarPerm modified mode [ 'src/client/ClientDataManager.js', 438, 420 ]
+88 silly gunzTarPerm extractEntry src/client/ClientDataResolver.js
+89 silly gunzTarPerm modified mode [ 'src/client/ClientDataResolver.js', 438, 420 ]
+90 silly gunzTarPerm extractEntry src/client/ClientManager.js
+91 silly gunzTarPerm modified mode [ 'src/client/ClientManager.js', 438, 420 ]
+92 silly gunzTarPerm extractEntry src/client/rest
+93 silly gunzTarPerm modified mode [ 'src/client/rest', 438, 493 ]
+94 silly gunzTarPerm extractEntry src/client/voice
+95 silly gunzTarPerm modified mode [ 'src/client/voice', 438, 493 ]
+96 silly gunzTarPerm extractEntry src/client/WebhookClient.js
+97 silly gunzTarPerm modified mode [ 'src/client/WebhookClient.js', 438, 420 ]
+98 silly gunzTarPerm extractEntry src/client/websocket
+99 silly gunzTarPerm modified mode [ 'src/client/websocket', 438, 493 ]
+100 silly gunzTarPerm extractEntry src/sharding/Shard.js
+101 silly gunzTarPerm modified mode [ 'src/sharding/Shard.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry src/sharding/ShardClientUtil.js
+103 silly gunzTarPerm modified mode [ 'src/sharding/ShardClientUtil.js', 438, 420 ]
+104 silly gunzTarPerm extractEntry src/sharding/ShardingManager.js
+105 silly gunzTarPerm modified mode [ 'src/sharding/ShardingManager.js', 438, 420 ]
+106 silly gunzTarPerm extractEntry src/structures/Attachment.js
+107 silly gunzTarPerm modified mode [ 'src/structures/Attachment.js', 438, 420 ]
+108 silly gunzTarPerm extractEntry src/structures/CategoryChannel.js
+109 silly gunzTarPerm modified mode [ 'src/structures/CategoryChannel.js', 438, 420 ]
+110 silly gunzTarPerm extractEntry src/structures/Channel.js
+111 silly gunzTarPerm modified mode [ 'src/structures/Channel.js', 438, 420 ]
+112 silly gunzTarPerm extractEntry src/structures/ClientUser.js
+113 silly gunzTarPerm modified mode [ 'src/structures/ClientUser.js', 438, 420 ]
+114 silly gunzTarPerm extractEntry src/structures/ClientUserChannelOverride.js
+115 silly gunzTarPerm modified mode [ 'src/structures/ClientUserChannelOverride.js', 438, 420 ]
+116 silly gunzTarPerm extractEntry src/structures/ClientUserGuildSettings.js
+117 silly gunzTarPerm modified mode [ 'src/structures/ClientUserGuildSettings.js', 438, 420 ]
+118 silly gunzTarPerm extractEntry src/structures/ClientUserSettings.js
+119 silly gunzTarPerm modified mode [ 'src/structures/ClientUserSettings.js', 438, 420 ]
+120 silly gunzTarPerm extractEntry src/structures/DMChannel.js
+121 silly gunzTarPerm modified mode [ 'src/structures/DMChannel.js', 438, 420 ]
+122 silly gunzTarPerm extractEntry src/structures/Emoji.js
+123 silly gunzTarPerm modified mode [ 'src/structures/Emoji.js', 438, 420 ]
+124 silly gunzTarPerm extractEntry src/structures/GroupDMChannel.js
+125 silly gunzTarPerm modified mode [ 'src/structures/GroupDMChannel.js', 438, 420 ]
+126 silly gunzTarPerm extractEntry src/structures/Guild.js
+127 silly gunzTarPerm modified mode [ 'src/structures/Guild.js', 438, 420 ]
+128 silly gunzTarPerm extractEntry src/structures/GuildAuditLogs.js
+129 silly gunzTarPerm modified mode [ 'src/structures/GuildAuditLogs.js', 438, 420 ]
+130 silly gunzTarPerm extractEntry src/structures/GuildChannel.js
+131 silly gunzTarPerm modified mode [ 'src/structures/GuildChannel.js', 438, 420 ]
+132 silly gunzTarPerm extractEntry src/structures/GuildMember.js
+133 silly gunzTarPerm modified mode [ 'src/structures/GuildMember.js', 438, 420 ]
+134 silly gunzTarPerm extractEntry src/structures/interfaces
+135 silly gunzTarPerm modified mode [ 'src/structures/interfaces', 438, 493 ]
+136 silly gunzTarPerm extractEntry src/structures/Invite.js
+137 silly gunzTarPerm modified mode [ 'src/structures/Invite.js', 438, 420 ]
+138 silly gunzTarPerm extractEntry src/structures/Message.js
+139 silly gunzTarPerm modified mode [ 'src/structures/Message.js', 438, 420 ]
+140 silly gunzTarPerm extractEntry src/structures/MessageAttachment.js
+141 silly gunzTarPerm modified mode [ 'src/structures/MessageAttachment.js', 438, 420 ]
+142 silly gunzTarPerm extractEntry src/structures/MessageCollector.js
+143 silly gunzTarPerm modified mode [ 'src/structures/MessageCollector.js', 438, 420 ]
+144 silly gunzTarPerm extractEntry src/structures/MessageEmbed.js
+145 silly gunzTarPerm modified mode [ 'src/structures/MessageEmbed.js', 438, 420 ]
+146 silly gunzTarPerm extractEntry src/structures/MessageMentions.js
+147 silly gunzTarPerm modified mode [ 'src/structures/MessageMentions.js', 438, 420 ]
+148 silly gunzTarPerm extractEntry src/structures/MessageReaction.js
+149 silly gunzTarPerm modified mode [ 'src/structures/MessageReaction.js', 438, 420 ]
+150 silly gunzTarPerm extractEntry src/structures/NewsChannel.js
+151 silly gunzTarPerm modified mode [ 'src/structures/NewsChannel.js', 438, 420 ]
+152 silly gunzTarPerm extractEntry src/structures/OAuth2Application.js
+153 silly gunzTarPerm modified mode [ 'src/structures/OAuth2Application.js', 438, 420 ]
+154 silly gunzTarPerm extractEntry src/structures/PartialGuild.js
+155 silly gunzTarPerm modified mode [ 'src/structures/PartialGuild.js', 438, 420 ]
+156 silly gunzTarPerm extractEntry src/structures/PartialGuildChannel.js
+157 silly gunzTarPerm modified mode [ 'src/structures/PartialGuildChannel.js', 438, 420 ]
+158 silly gunzTarPerm extractEntry src/structures/PermissionOverwrites.js
+159 silly gunzTarPerm modified mode [ 'src/structures/PermissionOverwrites.js', 438, 420 ]
+160 silly gunzTarPerm extractEntry src/structures/Presence.js
+161 silly gunzTarPerm modified mode [ 'src/structures/Presence.js', 438, 420 ]
+162 silly gunzTarPerm extractEntry src/structures/ReactionCollector.js
+163 silly gunzTarPerm modified mode [ 'src/structures/ReactionCollector.js', 438, 420 ]
+164 silly gunzTarPerm extractEntry src/structures/ReactionEmoji.js
+165 silly gunzTarPerm modified mode [ 'src/structures/ReactionEmoji.js', 438, 420 ]
+166 silly gunzTarPerm extractEntry src/structures/RichEmbed.js
+167 silly gunzTarPerm modified mode [ 'src/structures/RichEmbed.js', 438, 420 ]
+168 silly gunzTarPerm extractEntry src/structures/Role.js
+169 silly gunzTarPerm modified mode [ 'src/structures/Role.js', 438, 420 ]
+170 silly gunzTarPerm extractEntry src/structures/shared
+171 silly gunzTarPerm modified mode [ 'src/structures/shared', 438, 493 ]
+172 silly gunzTarPerm extractEntry src/structures/StoreChannel.js
+173 silly gunzTarPerm modified mode [ 'src/structures/StoreChannel.js', 438, 420 ]
+174 silly gunzTarPerm extractEntry src/structures/TextChannel.js
+175 silly gunzTarPerm modified mode [ 'src/structures/TextChannel.js', 438, 420 ]
+176 silly gunzTarPerm extractEntry src/structures/User.js
+177 silly gunzTarPerm modified mode [ 'src/structures/User.js', 438, 420 ]
+178 silly gunzTarPerm extractEntry src/structures/UserConnection.js
+179 silly gunzTarPerm modified mode [ 'src/structures/UserConnection.js', 438, 420 ]
+180 silly gunzTarPerm extractEntry src/structures/UserProfile.js
+181 silly gunzTarPerm modified mode [ 'src/structures/UserProfile.js', 438, 420 ]
+182 silly gunzTarPerm extractEntry src/structures/VoiceChannel.js
+183 silly gunzTarPerm modified mode [ 'src/structures/VoiceChannel.js', 438, 420 ]
+184 silly gunzTarPerm extractEntry src/structures/VoiceRegion.js
+185 silly gunzTarPerm modified mode [ 'src/structures/VoiceRegion.js', 438, 420 ]
+186 silly gunzTarPerm extractEntry src/structures/Webhook.js
+187 silly gunzTarPerm modified mode [ 'src/structures/Webhook.js', 438, 420 ]
+188 silly gunzTarPerm extractEntry src/util/Collection.js
+189 silly gunzTarPerm modified mode [ 'src/util/Collection.js', 438, 420 ]
+190 silly gunzTarPerm extractEntry src/util/Constants.js
+191 silly gunzTarPerm modified mode [ 'src/util/Constants.js', 438, 420 ]
+192 silly gunzTarPerm extractEntry src/util/Permissions.js
+193 silly gunzTarPerm modified mode [ 'src/util/Permissions.js', 438, 420 ]
+194 silly gunzTarPerm extractEntry src/util/Snowflake.js
+195 silly gunzTarPerm modified mode [ 'src/util/Snowflake.js', 438, 420 ]
+196 silly gunzTarPerm extractEntry src/util/Util.js
+197 silly gunzTarPerm modified mode [ 'src/util/Util.js', 438, 420 ]
+198 silly gunzTarPerm extractEntry src/client/actions/Action.js
+199 silly gunzTarPerm modified mode [ 'src/client/actions/Action.js', 438, 420 ]
+200 silly gunzTarPerm extractEntry src/client/actions/ActionsManager.js
+201 silly gunzTarPerm modified mode [ 'src/client/actions/ActionsManager.js', 438, 420 ]
+202 silly gunzTarPerm extractEntry src/client/actions/ChannelCreate.js
+203 silly gunzTarPerm modified mode [ 'src/client/actions/ChannelCreate.js', 438, 420 ]
+204 silly gunzTarPerm extractEntry src/client/actions/ChannelDelete.js
+205 silly gunzTarPerm modified mode [ 'src/client/actions/ChannelDelete.js', 438, 420 ]
+206 silly gunzTarPerm extractEntry src/client/actions/ChannelUpdate.js
+207 silly gunzTarPerm modified mode [ 'src/client/actions/ChannelUpdate.js', 438, 420 ]
+208 silly gunzTarPerm extractEntry src/client/actions/GuildBanRemove.js
+209 silly gunzTarPerm modified mode [ 'src/client/actions/GuildBanRemove.js', 438, 420 ]
+210 silly gunzTarPerm extractEntry src/client/actions/GuildChannelsPositionUpdate.js
+211 silly gunzTarPerm modified mode [ 'src/client/actions/GuildChannelsPositionUpdate.js', 438, 420 ]
+212 silly gunzTarPerm extractEntry src/client/actions/GuildDelete.js
+213 silly gunzTarPerm modified mode [ 'src/client/actions/GuildDelete.js', 438, 420 ]
+214 silly gunzTarPerm extractEntry src/client/actions/GuildEmojiCreate.js
+215 silly gunzTarPerm modified mode [ 'src/client/actions/GuildEmojiCreate.js', 438, 420 ]
+216 silly gunzTarPerm extractEntry src/client/actions/GuildEmojiDelete.js
+217 silly gunzTarPerm modified mode [ 'src/client/actions/GuildEmojiDelete.js', 438, 420 ]
+218 silly gunzTarPerm extractEntry src/client/actions/GuildEmojisUpdate.js
+219 silly gunzTarPerm modified mode [ 'src/client/actions/GuildEmojisUpdate.js', 438, 420 ]
+220 silly gunzTarPerm extractEntry src/client/actions/GuildEmojiUpdate.js
+221 silly gunzTarPerm modified mode [ 'src/client/actions/GuildEmojiUpdate.js', 438, 420 ]
+222 silly gunzTarPerm extractEntry src/client/actions/GuildMemberGet.js
+223 silly gunzTarPerm modified mode [ 'src/client/actions/GuildMemberGet.js', 438, 420 ]
+224 silly gunzTarPerm extractEntry src/client/actions/GuildMemberRemove.js
+225 silly gunzTarPerm modified mode [ 'src/client/actions/GuildMemberRemove.js', 438, 420 ]
+226 silly gunzTarPerm extractEntry src/client/actions/GuildRoleCreate.js
+227 silly gunzTarPerm modified mode [ 'src/client/actions/GuildRoleCreate.js', 438, 420 ]
+228 silly gunzTarPerm extractEntry src/client/actions/GuildRoleDelete.js
+229 silly gunzTarPerm modified mode [ 'src/client/actions/GuildRoleDelete.js', 438, 420 ]
+230 silly gunzTarPerm extractEntry src/client/actions/GuildRolesPositionUpdate.js
+231 silly gunzTarPerm modified mode [ 'src/client/actions/GuildRolesPositionUpdate.js', 438, 420 ]
+232 silly gunzTarPerm extractEntry src/client/actions/GuildRoleUpdate.js
+233 silly gunzTarPerm modified mode [ 'src/client/actions/GuildRoleUpdate.js', 438, 420 ]
+234 silly gunzTarPerm extractEntry src/client/actions/GuildSync.js
+235 silly gunzTarPerm modified mode [ 'src/client/actions/GuildSync.js', 438, 420 ]
+236 silly gunzTarPerm extractEntry src/client/actions/GuildUpdate.js
+237 silly gunzTarPerm modified mode [ 'src/client/actions/GuildUpdate.js', 438, 420 ]
+238 silly gunzTarPerm extractEntry src/client/actions/MessageCreate.js
+239 silly gunzTarPerm modified mode [ 'src/client/actions/MessageCreate.js', 438, 420 ]
+240 silly gunzTarPerm extractEntry src/client/actions/MessageDelete.js
+241 silly gunzTarPerm modified mode [ 'src/client/actions/MessageDelete.js', 438, 420 ]
+242 silly gunzTarPerm extractEntry src/client/actions/MessageDeleteBulk.js
+243 silly gunzTarPerm modified mode [ 'src/client/actions/MessageDeleteBulk.js', 438, 420 ]
+244 silly gunzTarPerm extractEntry src/client/actions/MessageReactionAdd.js
+245 silly gunzTarPerm modified mode [ 'src/client/actions/MessageReactionAdd.js', 438, 420 ]
+246 silly gunzTarPerm extractEntry src/client/actions/MessageReactionRemove.js
+247 silly gunzTarPerm modified mode [ 'src/client/actions/MessageReactionRemove.js', 438, 420 ]
+248 silly gunzTarPerm extractEntry src/client/actions/MessageReactionRemoveAll.js
+249 silly gunzTarPerm modified mode [ 'src/client/actions/MessageReactionRemoveAll.js', 438, 420 ]
+250 silly gunzTarPerm extractEntry src/client/actions/MessageUpdate.js
+251 silly gunzTarPerm modified mode [ 'src/client/actions/MessageUpdate.js', 438, 420 ]
+252 silly gunzTarPerm extractEntry src/client/actions/UserGet.js
+253 silly gunzTarPerm modified mode [ 'src/client/actions/UserGet.js', 438, 420 ]
+254 silly gunzTarPerm extractEntry src/client/actions/UserNoteUpdate.js
+255 silly gunzTarPerm modified mode [ 'src/client/actions/UserNoteUpdate.js', 438, 420 ]
+256 silly gunzTarPerm extractEntry src/client/actions/UserUpdate.js
+257 silly gunzTarPerm modified mode [ 'src/client/actions/UserUpdate.js', 438, 420 ]
+258 silly gunzTarPerm extractEntry src/client/rest/APIRequest.js
+259 silly gunzTarPerm modified mode [ 'src/client/rest/APIRequest.js', 438, 420 ]
+260 silly gunzTarPerm extractEntry src/client/rest/DiscordAPIError.js
+261 silly gunzTarPerm modified mode [ 'src/client/rest/DiscordAPIError.js', 438, 420 ]
+262 silly gunzTarPerm extractEntry src/client/rest/RequestHandlers
+263 silly gunzTarPerm modified mode [ 'src/client/rest/RequestHandlers', 438, 493 ]
+264 silly gunzTarPerm extractEntry src/client/rest/RESTManager.js
+265 silly gunzTarPerm modified mode [ 'src/client/rest/RESTManager.js', 438, 420 ]
+266 silly gunzTarPerm extractEntry src/client/rest/RESTMethods.js
+267 silly gunzTarPerm modified mode [ 'src/client/rest/RESTMethods.js', 438, 420 ]
+268 silly gunzTarPerm extractEntry src/client/rest/UserAgentManager.js
+269 silly gunzTarPerm modified mode [ 'src/client/rest/UserAgentManager.js', 438, 420 ]
+270 silly gunzTarPerm extractEntry src/client/voice/ClientVoiceManager.js
+271 silly gunzTarPerm modified mode [ 'src/client/voice/ClientVoiceManager.js', 438, 420 ]
+272 silly gunzTarPerm extractEntry src/client/voice/dispatcher
+273 silly gunzTarPerm modified mode [ 'src/client/voice/dispatcher', 438, 493 ]
+274 silly gunzTarPerm extractEntry src/client/voice/opus
+275 silly gunzTarPerm modified mode [ 'src/client/voice/opus', 438, 493 ]
+276 silly gunzTarPerm extractEntry src/client/voice/player
+277 silly gunzTarPerm modified mode [ 'src/client/voice/player', 438, 493 ]
+278 silly gunzTarPerm extractEntry src/client/voice/receiver
+279 silly gunzTarPerm modified mode [ 'src/client/voice/receiver', 438, 493 ]
+280 silly gunzTarPerm extractEntry src/client/voice/util
+281 silly gunzTarPerm modified mode [ 'src/client/voice/util', 438, 493 ]
+282 silly gunzTarPerm extractEntry src/client/voice/VoiceBroadcast.js
+283 silly gunzTarPerm modified mode [ 'src/client/voice/VoiceBroadcast.js', 438, 420 ]
+284 silly gunzTarPerm extractEntry src/client/voice/VoiceConnection.js
+285 silly gunzTarPerm modified mode [ 'src/client/voice/VoiceConnection.js', 438, 420 ]
+286 silly gunzTarPerm extractEntry src/client/voice/VoiceUDPClient.js
+287 silly gunzTarPerm modified mode [ 'src/client/voice/VoiceUDPClient.js', 438, 420 ]
+288 silly gunzTarPerm extractEntry src/client/voice/VoiceWebSocket.js
+289 silly gunzTarPerm modified mode [ 'src/client/voice/VoiceWebSocket.js', 438, 420 ]
+290 silly gunzTarPerm extractEntry src/client/websocket/packets
+291 silly gunzTarPerm modified mode [ 'src/client/websocket/packets', 438, 493 ]
+292 silly gunzTarPerm extractEntry src/client/websocket/WebSocketConnection.js
+293 silly gunzTarPerm modified mode [ 'src/client/websocket/WebSocketConnection.js', 438, 420 ]
+294 silly gunzTarPerm extractEntry src/client/websocket/WebSocketManager.js
+295 silly gunzTarPerm modified mode [ 'src/client/websocket/WebSocketManager.js', 438, 420 ]
+296 silly gunzTarPerm extractEntry src/structures/interfaces/Collector.js
+297 silly gunzTarPerm modified mode [ 'src/structures/interfaces/Collector.js', 438, 420 ]
+298 silly gunzTarPerm extractEntry src/structures/interfaces/TextBasedChannel.js
+299 silly gunzTarPerm modified mode [ 'src/structures/interfaces/TextBasedChannel.js', 438, 420 ]
+300 silly gunzTarPerm extractEntry src/structures/shared/resolvePermissions.js
+301 silly gunzTarPerm modified mode [ 'src/structures/shared/resolvePermissions.js', 438, 420 ]
+302 silly gunzTarPerm extractEntry src/client/rest/RequestHandlers/Burst.js
+303 silly gunzTarPerm modified mode [ 'src/client/rest/RequestHandlers/Burst.js', 438, 420 ]
+304 silly gunzTarPerm extractEntry src/client/rest/RequestHandlers/RequestHandler.js
+305 silly gunzTarPerm modified mode [ 'src/client/rest/RequestHandlers/RequestHandler.js', 438, 420 ]
+306 silly gunzTarPerm extractEntry src/client/rest/RequestHandlers/Sequential.js
+307 silly gunzTarPerm modified mode [ 'src/client/rest/RequestHandlers/Sequential.js', 438, 420 ]
+308 silly gunzTarPerm extractEntry src/client/voice/dispatcher/StreamDispatcher.js
+309 silly gunzTarPerm modified mode [ 'src/client/voice/dispatcher/StreamDispatcher.js', 438, 420 ]
+310 silly gunzTarPerm extractEntry src/client/voice/opus/BaseOpusEngine.js
+311 silly gunzTarPerm modified mode [ 'src/client/voice/opus/BaseOpusEngine.js', 438, 420 ]
+312 silly gunzTarPerm extractEntry src/client/voice/opus/NodeOpusEngine.js
+313 silly gunzTarPerm modified mode [ 'src/client/voice/opus/NodeOpusEngine.js', 438, 420 ]
+314 silly gunzTarPerm extractEntry src/client/voice/opus/OpusEngineList.js
+315 silly gunzTarPerm modified mode [ 'src/client/voice/opus/OpusEngineList.js', 438, 420 ]
+316 silly gunzTarPerm extractEntry src/client/voice/opus/OpusScriptEngine.js
+317 silly gunzTarPerm modified mode [ 'src/client/voice/opus/OpusScriptEngine.js', 438, 420 ]
+318 silly gunzTarPerm extractEntry src/client/voice/player/AudioPlayer.js
+319 silly gunzTarPerm modified mode [ 'src/client/voice/player/AudioPlayer.js', 438, 420 ]
+320 silly gunzTarPerm extractEntry src/client/voice/receiver/VoiceReadable.js
+321 silly gunzTarPerm modified mode [ 'src/client/voice/receiver/VoiceReadable.js', 438, 420 ]
+322 silly gunzTarPerm extractEntry src/client/voice/receiver/VoiceReceiver.js
+323 silly gunzTarPerm modified mode [ 'src/client/voice/receiver/VoiceReceiver.js', 438, 420 ]
+324 silly gunzTarPerm extractEntry src/client/voice/util/Secretbox.js
+325 silly gunzTarPerm modified mode [ 'src/client/voice/util/Secretbox.js', 438, 420 ]
+326 silly gunzTarPerm extractEntry src/client/voice/util/SecretKey.js
+327 silly gunzTarPerm modified mode [ 'src/client/voice/util/SecretKey.js', 438, 420 ]
+328 silly gunzTarPerm extractEntry src/client/voice/util/VolumeInterface.js
+329 silly gunzTarPerm modified mode [ 'src/client/voice/util/VolumeInterface.js', 438, 420 ]
+330 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers
+331 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers', 438, 493 ]
+332 silly gunzTarPerm extractEntry src/client/websocket/packets/WebSocketPacketManager.js
+333 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/WebSocketPacketManager.js',
+333 silly gunzTarPerm   438,
+333 silly gunzTarPerm   420 ]
+334 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/AbstractHandler.js
+335 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/AbstractHandler.js',
+335 silly gunzTarPerm   438,
+335 silly gunzTarPerm   420 ]
+336 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/ChannelCreate.js
+337 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/ChannelCreate.js',
+337 silly gunzTarPerm   438,
+337 silly gunzTarPerm   420 ]
+338 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/ChannelDelete.js
+339 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/ChannelDelete.js',
+339 silly gunzTarPerm   438,
+339 silly gunzTarPerm   420 ]
+340 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/ChannelPinsUpdate.js
+341 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/ChannelPinsUpdate.js',
+341 silly gunzTarPerm   438,
+341 silly gunzTarPerm   420 ]
+342 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/ChannelUpdate.js
+343 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/ChannelUpdate.js',
+343 silly gunzTarPerm   438,
+343 silly gunzTarPerm   420 ]
+344 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildBanAdd.js
+345 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildBanAdd.js',
+345 silly gunzTarPerm   438,
+345 silly gunzTarPerm   420 ]
+346 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildBanRemove.js
+347 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildBanRemove.js',
+347 silly gunzTarPerm   438,
+347 silly gunzTarPerm   420 ]
+348 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildCreate.js
+349 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildCreate.js',
+349 silly gunzTarPerm   438,
+349 silly gunzTarPerm   420 ]
+350 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildDelete.js
+351 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildDelete.js',
+351 silly gunzTarPerm   438,
+351 silly gunzTarPerm   420 ]
+352 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildEmojisUpdate.js
+353 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildEmojisUpdate.js',
+353 silly gunzTarPerm   438,
+353 silly gunzTarPerm   420 ]
+354 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildIntegrationsUpdate.js
+355 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildIntegrationsUpdate.js',
+355 silly gunzTarPerm   438,
+355 silly gunzTarPerm   420 ]
+356 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildMemberAdd.js
+357 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildMemberAdd.js',
+357 silly gunzTarPerm   438,
+357 silly gunzTarPerm   420 ]
+358 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildMemberRemove.js
+359 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildMemberRemove.js',
+359 silly gunzTarPerm   438,
+359 silly gunzTarPerm   420 ]
+360 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildMembersChunk.js
+361 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildMembersChunk.js',
+361 silly gunzTarPerm   438,
+361 silly gunzTarPerm   420 ]
+362 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildMemberUpdate.js
+363 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildMemberUpdate.js',
+363 silly gunzTarPerm   438,
+363 silly gunzTarPerm   420 ]
+364 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildRoleCreate.js
+365 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildRoleCreate.js',
+365 silly gunzTarPerm   438,
+365 silly gunzTarPerm   420 ]
+366 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildRoleDelete.js
+367 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildRoleDelete.js',
+367 silly gunzTarPerm   438,
+367 silly gunzTarPerm   420 ]
+368 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildRoleUpdate.js
+369 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildRoleUpdate.js',
+369 silly gunzTarPerm   438,
+369 silly gunzTarPerm   420 ]
+370 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildSync.js
+371 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildSync.js',
+371 silly gunzTarPerm   438,
+371 silly gunzTarPerm   420 ]
+372 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/GuildUpdate.js
+373 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/GuildUpdate.js',
+373 silly gunzTarPerm   438,
+373 silly gunzTarPerm   420 ]
+374 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/MessageCreate.js
+375 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/MessageCreate.js',
+375 silly gunzTarPerm   438,
+375 silly gunzTarPerm   420 ]
+376 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/MessageDelete.js
+377 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/MessageDelete.js',
+377 silly gunzTarPerm   438,
+377 silly gunzTarPerm   420 ]
+378 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/MessageDeleteBulk.js
+379 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/MessageDeleteBulk.js',
+379 silly gunzTarPerm   438,
+379 silly gunzTarPerm   420 ]
+380 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/MessageReactionAdd.js
+381 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/MessageReactionAdd.js',
+381 silly gunzTarPerm   438,
+381 silly gunzTarPerm   420 ]
+382 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/MessageReactionRemove.js
+383 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/MessageReactionRemove.js',
+383 silly gunzTarPerm   438,
+383 silly gunzTarPerm   420 ]
+384 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/MessageReactionRemoveAll.js
+385 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/MessageReactionRemoveAll.js',
+385 silly gunzTarPerm   438,
+385 silly gunzTarPerm   420 ]
+386 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/MessageUpdate.js
+387 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/MessageUpdate.js',
+387 silly gunzTarPerm   438,
+387 silly gunzTarPerm   420 ]
+388 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/PresenceUpdate.js
+389 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/PresenceUpdate.js',
+389 silly gunzTarPerm   438,
+389 silly gunzTarPerm   420 ]
+390 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/Ready.js
+391 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/Ready.js', 438, 420 ]
+392 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/RelationshipAdd.js
+393 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/RelationshipAdd.js',
+393 silly gunzTarPerm   438,
+393 silly gunzTarPerm   420 ]
+394 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/RelationshipRemove.js
+395 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/RelationshipRemove.js',
+395 silly gunzTarPerm   438,
+395 silly gunzTarPerm   420 ]
+396 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/Resumed.js
+397 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/Resumed.js', 438, 420 ]
+398 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/TypingStart.js
+399 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/TypingStart.js',
+399 silly gunzTarPerm   438,
+399 silly gunzTarPerm   420 ]
+400 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/UserGuildSettingsUpdate.js
+401 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/UserGuildSettingsUpdate.js',
+401 silly gunzTarPerm   438,
+401 silly gunzTarPerm   420 ]
+402 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/UserNoteUpdate.js
+403 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/UserNoteUpdate.js',
+403 silly gunzTarPerm   438,
+403 silly gunzTarPerm   420 ]
+404 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/UserSettingsUpdate.js
+405 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/UserSettingsUpdate.js',
+405 silly gunzTarPerm   438,
+405 silly gunzTarPerm   420 ]
+406 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/UserUpdate.js
+407 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/UserUpdate.js',
+407 silly gunzTarPerm   438,
+407 silly gunzTarPerm   420 ]
+408 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/VoiceServerUpdate.js
+409 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/VoiceServerUpdate.js',
+409 silly gunzTarPerm   438,
+409 silly gunzTarPerm   420 ]
+410 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/VoiceStateUpdate.js
+411 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/VoiceStateUpdate.js',
+411 silly gunzTarPerm   438,
+411 silly gunzTarPerm   420 ]
+412 silly gunzTarPerm extractEntry src/client/websocket/packets/handlers/WebhooksUpdate.js
+413 silly gunzTarPerm modified mode [ 'src/client/websocket/packets/handlers/WebhooksUpdate.js',
+413 silly gunzTarPerm   438,
+413 silly gunzTarPerm   420 ]
+414 silly lockFile b33f0658-eetusBot-node-modules-discord-js tar:///home/pi/CleetusBot/node_modules/discord.js
+415 silly lockFile b33f0658-eetusBot-node-modules-discord-js tar:///home/pi/CleetusBot/node_modules/discord.js
+416 silly lockFile e294163a-pm-discord-js-11-5-1-package-tgz tar:///root/.npm/discord.js/11.5.1/package.tgz
+417 silly lockFile e294163a-pm-discord-js-11-5-1-package-tgz tar:///root/.npm/discord.js/11.5.1/package.tgz
+418 info preinstall discord.js@11.5.1
+419 verbose readDependencies using package.json deps
+420 verbose readDependencies using package.json deps
+421 silly resolved []
+422 verbose about to build /home/pi/CleetusBot/node_modules/discord.js
+423 info build /home/pi/CleetusBot/node_modules/discord.js
+424 verbose linkStuff [ false, false, false, '/home/pi/CleetusBot/node_modules' ]
+425 info linkStuff discord.js@11.5.1
+426 verbose linkBins discord.js@11.5.1
+427 verbose linkMans discord.js@11.5.1
+428 verbose rebuildBundles discord.js@11.5.1
+429 info install discord.js@11.5.1
+430 info postinstall discord.js@11.5.1
+431 verbose readDependencies using package.json deps
+432 verbose cache add [ 'node-opus@^0.2.7', null ]
+433 verbose cache add name=undefined spec="node-opus@^0.2.7" args=["node-opus@^0.2.7",null]
+434 verbose parsed url { protocol: null,
+434 verbose parsed url   slashes: null,
+434 verbose parsed url   auth: null,
+434 verbose parsed url   host: null,
+434 verbose parsed url   port: null,
+434 verbose parsed url   hostname: null,
+434 verbose parsed url   hash: null,
+434 verbose parsed url   search: null,
+434 verbose parsed url   query: null,
+434 verbose parsed url   pathname: 'node-opus@^0.2.7',
+434 verbose parsed url   path: 'node-opus@^0.2.7',
+434 verbose parsed url   href: 'node-opus@^0.2.7' }
+435 verbose cache add [ 'opusscript@^0.0.6', null ]
+436 verbose cache add name=undefined spec="opusscript@^0.0.6" args=["opusscript@^0.0.6",null]
+437 verbose parsed url { protocol: null,
+437 verbose parsed url   slashes: null,
+437 verbose parsed url   auth: null,
+437 verbose parsed url   host: null,
+437 verbose parsed url   port: null,
+437 verbose parsed url   hostname: null,
+437 verbose parsed url   hash: null,
+437 verbose parsed url   search: null,
+437 verbose parsed url   query: null,
+437 verbose parsed url   pathname: 'opusscript@^0.0.6',
+437 verbose parsed url   path: 'opusscript@^0.0.6',
+437 verbose parsed url   href: 'opusscript@^0.0.6' }
+438 verbose cache add [ 'erlpack@discordapp/erlpack', null ]
+439 verbose cache add name=undefined spec="erlpack@discordapp/erlpack" args=["erlpack@discordapp/erlpack",null]
+440 verbose parsed url { protocol: null,
+440 verbose parsed url   slashes: null,
+440 verbose parsed url   auth: null,
+440 verbose parsed url   host: null,
+440 verbose parsed url   port: null,
+440 verbose parsed url   hostname: null,
+440 verbose parsed url   hash: null,
+440 verbose parsed url   search: null,
+440 verbose parsed url   query: null,
+440 verbose parsed url   pathname: 'erlpack@discordapp/erlpack',
+440 verbose parsed url   path: 'erlpack@discordapp/erlpack',
+440 verbose parsed url   href: 'erlpack@discordapp/erlpack' }
+441 verbose cache add [ 'sodium@^2.0.3', null ]
+442 verbose cache add name=undefined spec="sodium@^2.0.3" args=["sodium@^2.0.3",null]
+443 verbose parsed url { protocol: null,
+443 verbose parsed url   slashes: null,
+443 verbose parsed url   auth: null,
+443 verbose parsed url   host: null,
+443 verbose parsed url   port: null,
+443 verbose parsed url   hostname: null,
+443 verbose parsed url   hash: null,
+443 verbose parsed url   search: null,
+443 verbose parsed url   query: null,
+443 verbose parsed url   pathname: 'sodium@^2.0.3',
+443 verbose parsed url   path: 'sodium@^2.0.3',
+443 verbose parsed url   href: 'sodium@^2.0.3' }
+444 verbose cache add [ 'libsodium-wrappers@^0.7.3', null ]
+445 verbose cache add name=undefined spec="libsodium-wrappers@^0.7.3" args=["libsodium-wrappers@^0.7.3",null]
+446 verbose parsed url { protocol: null,
+446 verbose parsed url   slashes: null,
+446 verbose parsed url   auth: null,
+446 verbose parsed url   host: null,
+446 verbose parsed url   port: null,
+446 verbose parsed url   hostname: null,
+446 verbose parsed url   hash: null,
+446 verbose parsed url   search: null,
+446 verbose parsed url   query: null,
+446 verbose parsed url   pathname: 'libsodium-wrappers@^0.7.3',
+446 verbose parsed url   path: 'libsodium-wrappers@^0.7.3',
+446 verbose parsed url   href: 'libsodium-wrappers@^0.7.3' }
+447 verbose cache add [ '@discordjs/uws@^10.149.0', null ]
+448 verbose cache add name=undefined spec="@discordjs/uws@^10.149.0" args=["@discordjs/uws@^10.149.0",null]
+449 verbose parsed url { protocol: null,
+449 verbose parsed url   slashes: null,
+449 verbose parsed url   auth: null,
+449 verbose parsed url   host: null,
+449 verbose parsed url   port: null,
+449 verbose parsed url   hostname: null,
+449 verbose parsed url   hash: null,
+449 verbose parsed url   search: null,
+449 verbose parsed url   query: null,
+449 verbose parsed url   pathname: '@discordjs/uws@^10.149.0',
+449 verbose parsed url   path: '@discordjs/uws@^10.149.0',
+449 verbose parsed url   href: '@discordjs/uws@^10.149.0' }
+450 verbose cache add [ 'bufferutil@^4.0.0', null ]
+451 verbose cache add name=undefined spec="bufferutil@^4.0.0" args=["bufferutil@^4.0.0",null]
+452 verbose parsed url { protocol: null,
+452 verbose parsed url   slashes: null,
+452 verbose parsed url   auth: null,
+452 verbose parsed url   host: null,
+452 verbose parsed url   port: null,
+452 verbose parsed url   hostname: null,
+452 verbose parsed url   hash: null,
+452 verbose parsed url   search: null,
+452 verbose parsed url   query: null,
+452 verbose parsed url   pathname: 'bufferutil@^4.0.0',
+452 verbose parsed url   path: 'bufferutil@^4.0.0',
+452 verbose parsed url   href: 'bufferutil@^4.0.0' }
+453 verbose cache add name="node-opus" spec="^0.2.7" args=["node-opus","^0.2.7"]
+454 verbose parsed url { protocol: null,
+454 verbose parsed url   slashes: null,
+454 verbose parsed url   auth: null,
+454 verbose parsed url   host: null,
+454 verbose parsed url   port: null,
+454 verbose parsed url   hostname: null,
+454 verbose parsed url   hash: null,
+454 verbose parsed url   search: null,
+454 verbose parsed url   query: null,
+454 verbose parsed url   pathname: '^0.2.7',
+454 verbose parsed url   path: '^0.2.7',
+454 verbose parsed url   href: '^0.2.7' }
+455 verbose addNamed [ 'node-opus', '^0.2.7' ]
+456 verbose addNamed [ null, '>=0.2.7-0 <0.3.0-0' ]
+457 silly lockFile c7384ac0-node-opus-0-2-7 node-opus@^0.2.7
+458 verbose lock node-opus@^0.2.7 /root/.npm/c7384ac0-node-opus-0-2-7.lock
+459 verbose cache add name="opusscript" spec="^0.0.6" args=["opusscript","^0.0.6"]
+460 verbose parsed url { protocol: null,
+460 verbose parsed url   slashes: null,
+460 verbose parsed url   auth: null,
+460 verbose parsed url   host: null,
+460 verbose parsed url   port: null,
+460 verbose parsed url   hostname: null,
+460 verbose parsed url   hash: null,
+460 verbose parsed url   search: null,
+460 verbose parsed url   query: null,
+460 verbose parsed url   pathname: '^0.0.6',
+460 verbose parsed url   path: '^0.0.6',
+460 verbose parsed url   href: '^0.0.6' }
+461 verbose addNamed [ 'opusscript', '^0.0.6' ]
+462 verbose addNamed [ null, '=0.0.6' ]
+463 silly lockFile ff2cab21-opusscript-0-0-6 opusscript@^0.0.6
+464 verbose lock opusscript@^0.0.6 /root/.npm/ff2cab21-opusscript-0-0-6.lock
+465 verbose cache add name="erlpack" spec="discordapp/erlpack" args=["erlpack","discordapp/erlpack"]
+466 verbose parsed url { protocol: null,
+466 verbose parsed url   slashes: null,
+466 verbose parsed url   auth: null,
+466 verbose parsed url   host: null,
+466 verbose parsed url   port: null,
+466 verbose parsed url   hostname: null,
+466 verbose parsed url   hash: null,
+466 verbose parsed url   search: null,
+466 verbose parsed url   query: null,
+466 verbose parsed url   pathname: 'discordapp/erlpack',
+466 verbose parsed url   path: 'discordapp/erlpack',
+466 verbose parsed url   href: 'discordapp/erlpack' }
+467 verbose addNamed [ 'erlpack', 'discordapp/erlpack' ]
+468 verbose addNamed [ null, null ]
+469 silly lockFile f6631381-erlpack-discordapp-erlpack erlpack@discordapp/erlpack
+470 verbose lock erlpack@discordapp/erlpack /root/.npm/f6631381-erlpack-discordapp-erlpack.lock
+471 verbose cache add name="sodium" spec="^2.0.3" args=["sodium","^2.0.3"]
+472 verbose parsed url { protocol: null,
+472 verbose parsed url   slashes: null,
+472 verbose parsed url   auth: null,
+472 verbose parsed url   host: null,
+472 verbose parsed url   port: null,
+472 verbose parsed url   hostname: null,
+472 verbose parsed url   hash: null,
+472 verbose parsed url   search: null,
+472 verbose parsed url   query: null,
+472 verbose parsed url   pathname: '^2.0.3',
+472 verbose parsed url   path: '^2.0.3',
+472 verbose parsed url   href: '^2.0.3' }
+473 verbose addNamed [ 'sodium', '^2.0.3' ]
+474 verbose addNamed [ null, '>=2.0.3-0 <3.0.0-0' ]
+475 silly lockFile 225abcb0-sodium-2-0-3 sodium@^2.0.3
+476 verbose lock sodium@^2.0.3 /root/.npm/225abcb0-sodium-2-0-3.lock
+477 verbose cache add name="libsodium-wrappers" spec="^0.7.3" args=["libsodium-wrappers","^0.7.3"]
+478 verbose parsed url { protocol: null,
+478 verbose parsed url   slashes: null,
+478 verbose parsed url   auth: null,
+478 verbose parsed url   host: null,
+478 verbose parsed url   port: null,
+478 verbose parsed url   hostname: null,
+478 verbose parsed url   hash: null,
+478 verbose parsed url   search: null,
+478 verbose parsed url   query: null,
+478 verbose parsed url   pathname: '^0.7.3',
+478 verbose parsed url   path: '^0.7.3',
+478 verbose parsed url   href: '^0.7.3' }
+479 verbose addNamed [ 'libsodium-wrappers', '^0.7.3' ]
+480 verbose addNamed [ null, '>=0.7.3-0 <0.8.0-0' ]
+481 silly lockFile b0eaa483-libsodium-wrappers-0-7-3 libsodium-wrappers@^0.7.3
+482 verbose lock libsodium-wrappers@^0.7.3 /root/.npm/b0eaa483-libsodium-wrappers-0-7-3.lock
+483 verbose cache add name="" spec="discordjs/uws@^10.149.0" args=["","discordjs/uws@^10.149.0"]
+484 verbose parsed url { protocol: null,
+484 verbose parsed url   slashes: null,
+484 verbose parsed url   auth: null,
+484 verbose parsed url   host: null,
+484 verbose parsed url   port: null,
+484 verbose parsed url   hostname: null,
+484 verbose parsed url   hash: null,
+484 verbose parsed url   search: null,
+484 verbose parsed url   query: null,
+484 verbose parsed url   pathname: 'discordjs/uws@^10.149.0',
+484 verbose parsed url   path: 'discordjs/uws@^10.149.0',
+484 verbose parsed url   href: 'discordjs/uws@^10.149.0' }
+485 verbose cache add name="bufferutil" spec="^4.0.0" args=["bufferutil","^4.0.0"]
+486 verbose parsed url { protocol: null,
+486 verbose parsed url   slashes: null,
+486 verbose parsed url   auth: null,
+486 verbose parsed url   host: null,
+486 verbose parsed url   port: null,
+486 verbose parsed url   hostname: null,
+486 verbose parsed url   hash: null,
+486 verbose parsed url   search: null,
+486 verbose parsed url   query: null,
+486 verbose parsed url   pathname: '^4.0.0',
+486 verbose parsed url   path: '^4.0.0',
+486 verbose parsed url   href: '^4.0.0' }
+487 verbose addNamed [ 'bufferutil', '^4.0.0' ]
+488 verbose addNamed [ null, '>=4.0.0-0 <5.0.0-0' ]
+489 silly lockFile 8685ebc6-bufferutil-4-0-0 bufferutil@^4.0.0
+490 verbose lock bufferutil@^4.0.0 /root/.npm/8685ebc6-bufferutil-4-0-0.lock
+491 verbose cache add name="discordjs/uws" spec="^10.149.0" args=["discordjs/uws","^10.149.0"]
+492 verbose parsed url { protocol: null,
+492 verbose parsed url   slashes: null,
+492 verbose parsed url   auth: null,
+492 verbose parsed url   host: null,
+492 verbose parsed url   port: null,
+492 verbose parsed url   hostname: null,
+492 verbose parsed url   hash: null,
+492 verbose parsed url   search: null,
+492 verbose parsed url   query: null,
+492 verbose parsed url   pathname: '^10.149.0',
+492 verbose parsed url   path: '^10.149.0',
+492 verbose parsed url   href: '^10.149.0' }
+493 verbose addNamed [ 'discordjs/uws', '^10.149.0' ]
+494 verbose addNamed [ null, '>=10.149.0-0 <11.0.0-0' ]
+495 silly lockFile f0d6cf41-discordjs-uws-10-149-0 discordjs/uws@^10.149.0
+496 verbose lock discordjs/uws@^10.149.0 /root/.npm/f0d6cf41-discordjs-uws-10-149-0.lock
+497 silly addNameRange { name: 'opusscript', range: '=0.0.6', hasData: false }
+498 silly addNameRange { name: 'node-opus',
+498 silly addNameRange   range: '>=0.2.7-0 <0.3.0-0',
+498 silly addNameRange   hasData: false }
+499 info addNameTag [ 'erlpack', 'discordapp/erlpack' ]
+500 silly addNameRange { name: 'sodium', range: '>=2.0.3-0 <3.0.0-0', hasData: false }
+501 silly addNameRange { name: 'libsodium-wrappers',
+501 silly addNameRange   range: '>=0.7.3-0 <0.8.0-0',
+501 silly addNameRange   hasData: false }
+502 silly addNameRange { name: 'bufferutil',
+502 silly addNameRange   range: '>=4.0.0-0 <5.0.0-0',
+502 silly addNameRange   hasData: false }
+503 silly addNameRange { name: 'discordjs/uws',
+503 silly addNameRange   range: '>=10.149.0-0 <11.0.0-0',
+503 silly addNameRange   hasData: false }
+504 verbose request where is /opusscript
+505 verbose request registry https://registry.npmjs.org/
+506 verbose url raw /opusscript
+507 verbose url resolving [ 'https://registry.npmjs.org/', './opusscript' ]
+508 verbose url resolved https://registry.npmjs.org/opusscript
+509 verbose request where is https://registry.npmjs.org/opusscript
+510 info trying registry request attempt 1 at 03:51:18
+511 verbose etag W/"4eeff78179746fe0c73b9cc764078e54"
+512 http GET https://registry.npmjs.org/opusscript
+513 verbose request where is /node-opus
+514 verbose request registry https://registry.npmjs.org/
+515 verbose url raw /node-opus
+516 verbose url resolving [ 'https://registry.npmjs.org/', './node-opus' ]
+517 verbose url resolved https://registry.npmjs.org/node-opus
+518 verbose request where is https://registry.npmjs.org/node-opus
+519 info trying registry request attempt 1 at 03:51:18
+520 verbose etag W/"6f08800a556adbc15b65c5ed9bab0bfa"
+521 http GET https://registry.npmjs.org/node-opus
+522 verbose request where is /erlpack
+523 verbose request registry https://registry.npmjs.org/
+524 verbose url raw /erlpack
+525 verbose url resolving [ 'https://registry.npmjs.org/', './erlpack' ]
+526 verbose url resolved https://registry.npmjs.org/erlpack
+527 verbose request where is https://registry.npmjs.org/erlpack
+528 info trying registry request attempt 1 at 03:51:18
+529 verbose etag W/"82eefa9093f6942447b6088bbab810ce"
+530 http GET https://registry.npmjs.org/erlpack
+531 verbose request where is /sodium
+532 verbose request registry https://registry.npmjs.org/
+533 verbose url raw /sodium
+534 verbose url resolving [ 'https://registry.npmjs.org/', './sodium' ]
+535 verbose url resolved https://registry.npmjs.org/sodium
+536 verbose request where is https://registry.npmjs.org/sodium
+537 info trying registry request attempt 1 at 03:51:18
+538 verbose etag W/"d1be52e0035258216fb4cc7cd1f5b5c2"
+539 http GET https://registry.npmjs.org/sodium
+540 verbose request where is /libsodium-wrappers
+541 verbose request registry https://registry.npmjs.org/
+542 verbose url raw /libsodium-wrappers
+543 verbose url resolving [ 'https://registry.npmjs.org/', './libsodium-wrappers' ]
+544 verbose url resolved https://registry.npmjs.org/libsodium-wrappers
+545 verbose request where is https://registry.npmjs.org/libsodium-wrappers
+546 info trying registry request attempt 1 at 03:51:18
+547 verbose etag W/"b0e083ad1b58d3fb7c9d7799b68de1a3"
+548 http GET https://registry.npmjs.org/libsodium-wrappers
+549 verbose request where is /bufferutil
+550 verbose request registry https://registry.npmjs.org/
+551 verbose url raw /bufferutil
+552 verbose url resolving [ 'https://registry.npmjs.org/', './bufferutil' ]
+553 verbose url resolved https://registry.npmjs.org/bufferutil
+554 verbose request where is https://registry.npmjs.org/bufferutil
+555 info trying registry request attempt 1 at 03:51:18
+556 verbose etag W/"d152ecbcb5a1345426a96c67e5c60801"
+557 http GET https://registry.npmjs.org/bufferutil
+558 verbose request where is /discordjs/uws
+559 verbose request registry https://registry.npmjs.org/
+560 verbose url raw /discordjs/uws
+561 verbose url resolving [ 'https://registry.npmjs.org/', './discordjs/uws' ]
+562 verbose url resolved https://registry.npmjs.org/discordjs/uws
+563 verbose request where is https://registry.npmjs.org/discordjs/uws
+564 info trying registry request attempt 1 at 03:51:18
+565 http GET https://registry.npmjs.org/discordjs/uws
+566 http 304 https://registry.npmjs.org/libsodium-wrappers
+567 silly registry.get cb [ 304,
+567 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:19 GMT',
+567 silly registry.get     connection: 'keep-alive',
+567 silly registry.get     'set-cookie': [ '__cfduid=dbad2962f0efa202096f3d11a78dbb8b31571370679; expires=Sat, 17-Oct-20 03:51:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+567 silly registry.get     'cf-cache-status': 'HIT',
+567 silly registry.get     'cache-control': 'max-age=300',
+567 silly registry.get     'cf-ray': '52778d98db18e720-EWR',
+567 silly registry.get     age: '2396',
+567 silly registry.get     etag: '"b0e083ad1b58d3fb7c9d7799b68de1a3"',
+567 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+567 silly registry.get     'last-modified': 'Sat, 13 Jul 2019 17:42:51 GMT',
+567 silly registry.get     vary: 'accept-encoding, accept',
+567 silly registry.get     'x-amz-meta-rev': '41-0722d2e3f45da61f8abda9b518fe679b',
+567 silly registry.get     server: 'cloudflare' } ]
+568 verbose etag https://registry.npmjs.org/libsodium-wrappers from cache
+569 http 304 https://registry.npmjs.org/erlpack
+570 silly registry.get cb [ 304,
+570 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:19 GMT',
+570 silly registry.get     connection: 'keep-alive',
+570 silly registry.get     'set-cookie': [ '__cfduid=dba3d4faaa5d197f1830bec4d3c79660b1571370679; expires=Sat, 17-Oct-20 03:51:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+570 silly registry.get     'cf-cache-status': 'HIT',
+570 silly registry.get     'cache-control': 'max-age=300',
+570 silly registry.get     'cf-ray': '52778d98e936e865-EWR',
+570 silly registry.get     age: '2396',
+570 silly registry.get     etag: '"82eefa9093f6942447b6088bbab810ce"',
+570 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+570 silly registry.get     'last-modified': 'Sat, 26 May 2018 23:39:44 GMT',
+570 silly registry.get     vary: 'accept-encoding, accept',
+570 silly registry.get     server: 'cloudflare' } ]
+571 verbose etag https://registry.npmjs.org/erlpack from cache
+572 http 304 https://registry.npmjs.org/bufferutil
+573 silly registry.get cb [ 304,
+573 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:19 GMT',
+573 silly registry.get     connection: 'keep-alive',
+573 silly registry.get     'set-cookie': [ '__cfduid=dbad2962f0efa202096f3d11a78dbb8b31571370679; expires=Sat, 17-Oct-20 03:51:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+573 silly registry.get     'cf-cache-status': 'HIT',
+573 silly registry.get     'cache-control': 'max-age=300',
+573 silly registry.get     'cf-ray': '52778d99dd35e720-EWR',
+573 silly registry.get     age: '989',
+573 silly registry.get     etag: '"d152ecbcb5a1345426a96c67e5c60801"',
+573 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+573 silly registry.get     'last-modified': 'Tue, 01 Jan 2019 11:09:11 GMT',
+573 silly registry.get     vary: 'accept-encoding, accept',
+573 silly registry.get     'x-amz-meta-rev': '28-14d2e7eb1e42d1654b6f5daef8aafce5',
+573 silly registry.get     server: 'cloudflare' } ]
+574 verbose etag https://registry.npmjs.org/bufferutil from cache
+575 http 304 https://registry.npmjs.org/opusscript
+576 silly registry.get cb [ 304,
+576 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:19 GMT',
+576 silly registry.get     connection: 'keep-alive',
+576 silly registry.get     'set-cookie': [ '__cfduid=da9436fd289609cbd817eca5b2b9e61a91571370679; expires=Sat, 17-Oct-20 03:51:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+576 silly registry.get     'cf-cache-status': 'HIT',
+576 silly registry.get     'cache-control': 'max-age=300',
+576 silly registry.get     'cf-ray': '52778d99f89891f2-EWR',
+576 silly registry.get     age: '1989',
+576 silly registry.get     etag: '"4eeff78179746fe0c73b9cc764078e54"',
+576 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+576 silly registry.get     'last-modified': 'Thu, 08 Aug 2019 22:07:30 GMT',
+576 silly registry.get     vary: 'accept-encoding, accept',
+576 silly registry.get     'x-amz-meta-rev': '10-0aa9173c05cdd953903b87ce94d38c89',
+576 silly registry.get     server: 'cloudflare' } ]
+577 verbose etag https://registry.npmjs.org/opusscript from cache
+578 http 304 https://registry.npmjs.org/sodium
+579 silly registry.get cb [ 304,
+579 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:19 GMT',
+579 silly registry.get     connection: 'keep-alive',
+579 silly registry.get     'set-cookie': [ '__cfduid=d4c7c5c5460c39ee90860b3d50a3eb7a81571370679; expires=Sat, 17-Oct-20 03:51:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+579 silly registry.get     'cf-cache-status': 'HIT',
+579 silly registry.get     'cache-control': 'max-age=300',
+579 silly registry.get     'cf-ray': '52778d99fc5fccea-EWR',
+579 silly registry.get     age: '4330',
+579 silly registry.get     etag: '"d1be52e0035258216fb4cc7cd1f5b5c2"',
+579 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+579 silly registry.get     'last-modified': 'Sat, 05 Jan 2019 12:47:58 GMT',
+579 silly registry.get     vary: 'accept-encoding, accept',
+579 silly registry.get     'x-amz-meta-rev': '77-01967b962ac97dddc894f794ba00c241',
+579 silly registry.get     server: 'cloudflare' } ]
+580 verbose etag https://registry.npmjs.org/sodium from cache
+581 http 304 https://registry.npmjs.org/node-opus
+582 silly registry.get cb [ 304,
+582 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:19 GMT',
+582 silly registry.get     connection: 'keep-alive',
+582 silly registry.get     'set-cookie': [ '__cfduid=da9436fd289609cbd817eca5b2b9e61a91571370679; expires=Sat, 17-Oct-20 03:51:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+582 silly registry.get     'cf-cache-status': 'HIT',
+582 silly registry.get     'cache-control': 'max-age=300',
+582 silly registry.get     'cf-ray': '52778d9a18b491f2-EWR',
+582 silly registry.get     age: '2392',
+582 silly registry.get     etag: '"6f08800a556adbc15b65c5ed9bab0bfa"',
+582 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+582 silly registry.get     'last-modified': 'Tue, 15 Oct 2019 14:52:33 GMT',
+582 silly registry.get     vary: 'accept-encoding, accept',
+582 silly registry.get     'x-amz-meta-rev': '32-58ccf59407c7f44427ed4c4b4f471c52',
+582 silly registry.get     server: 'cloudflare' } ]
+583 verbose etag https://registry.npmjs.org/node-opus from cache
+584 silly addNameRange number 2 { name: 'libsodium-wrappers',
+584 silly addNameRange   range: '>=0.7.3-0 <0.8.0-0',
+584 silly addNameRange   hasData: true }
+585 silly addNameRange versions [ 'libsodium-wrappers',
+585 silly addNameRange   [ '0.2.2',
+585 silly addNameRange     '0.2.3',
+585 silly addNameRange     '0.2.4',
+585 silly addNameRange     '0.2.5',
+585 silly addNameRange     '0.2.6',
+585 silly addNameRange     '0.2.7',
+585 silly addNameRange     '0.2.8',
+585 silly addNameRange     '0.2.9',
+585 silly addNameRange     '0.2.10',
+585 silly addNameRange     '0.2.11',
+585 silly addNameRange     '0.2.12',
+585 silly addNameRange     '0.3.0',
+585 silly addNameRange     '0.3.1',
+585 silly addNameRange     '0.4.0',
+585 silly addNameRange     '0.4.1',
+585 silly addNameRange     '0.4.6',
+585 silly addNameRange     '0.4.7',
+585 silly addNameRange     '0.4.8',
+585 silly addNameRange     '0.4.9',
+585 silly addNameRange     '0.5.0',
+585 silly addNameRange     '0.5.1',
+585 silly addNameRange     '0.5.2',
+585 silly addNameRange     '0.5.4',
+585 silly addNameRange     '0.7.0',
+585 silly addNameRange     '0.7.1',
+585 silly addNameRange     '0.7.2',
+585 silly addNameRange     '0.7.3',
+585 silly addNameRange     '0.7.4',
+585 silly addNameRange     '0.7.5' ] ]
+586 verbose addNamed [ 'libsodium-wrappers', '0.7.5' ]
+587 verbose addNamed [ '0.7.5', '0.7.5' ]
+588 silly lockFile b5999cd8-libsodium-wrappers-0-7-5 libsodium-wrappers@0.7.5
+589 verbose lock libsodium-wrappers@0.7.5 /root/.npm/b5999cd8-libsodium-wrappers-0-7-5.lock
+590 silly addNameRange number 2 { name: 'bufferutil',
+590 silly addNameRange   range: '>=4.0.0-0 <5.0.0-0',
+590 silly addNameRange   hasData: true }
+591 silly addNameRange versions [ 'bufferutil',
+591 silly addNameRange   [ '1.0.0',
+591 silly addNameRange     '1.0.1',
+591 silly addNameRange     '1.1.0',
+591 silly addNameRange     '1.2.0',
+591 silly addNameRange     '1.2.1',
+591 silly addNameRange     '1.3.0',
+591 silly addNameRange     '2.0.0',
+591 silly addNameRange     '2.0.1',
+591 silly addNameRange     '3.0.0',
+591 silly addNameRange     '3.0.1',
+591 silly addNameRange     '3.0.2',
+591 silly addNameRange     '3.0.3',
+591 silly addNameRange     '3.0.3-napi',
+591 silly addNameRange     '3.0.4',
+591 silly addNameRange     '3.0.5',
+591 silly addNameRange     '4.0.0',
+591 silly addNameRange     '4.0.1' ] ]
+592 verbose addNamed [ 'bufferutil', '4.0.1' ]
+593 verbose addNamed [ '4.0.1', '4.0.1' ]
+594 silly lockFile 0a171ec8-bufferutil-4-0-1 bufferutil@4.0.1
+595 verbose lock bufferutil@4.0.1 /root/.npm/0a171ec8-bufferutil-4-0-1.lock
+596 info maybeGithub Attempting discordapp/erlpack from git://github.com/discordapp/erlpack
+597 silly lockFile 62dfae90-it-github-com-discordapp-erlpack git://github.com/discordapp/erlpack
+598 verbose lock git://github.com/discordapp/erlpack /root/.npm/62dfae90-it-github-com-discordapp-erlpack.lock
+599 verbose addRemoteGit [ 'git://github.com/discordapp/erlpack', 'master' ]
+600 silly addNameRange number 2 { name: 'opusscript', range: '=0.0.6', hasData: true }
+601 silly addNameRange versions [ 'opusscript',
+601 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.6', '0.0.7' ] ]
+602 verbose addNamed [ 'opusscript', '0.0.6' ]
+603 verbose addNamed [ '0.0.6', '0.0.6' ]
+604 silly lockFile 24553a97-opusscript-0-0-6 opusscript@0.0.6
+605 verbose lock opusscript@0.0.6 /root/.npm/24553a97-opusscript-0-0-6.lock
+606 http 405 https://registry.npmjs.org/discordjs/uws
+607 silly registry.get cb [ 405,
+607 silly registry.get   { date: 'Fri, 18 Oct 2019 03:51:19 GMT',
+607 silly registry.get     'content-type': 'application/json',
+607 silly registry.get     'content-length': '63',
+607 silly registry.get     connection: 'keep-alive',
+607 silly registry.get     'set-cookie': [ '__cfduid=dba3d4faaa5d197f1830bec4d3c79660b1571370679; expires=Sat, 17-Oct-20 03:51:19 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+607 silly registry.get     'cf-cache-status': 'DYNAMIC',
+607 silly registry.get     'cf-ray': '52778d99ebb3e865-EWR',
+607 silly registry.get     allow: 'PUT',
+607 silly registry.get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+607 silly registry.get     vary: 'Accept-Encoding',
+607 silly registry.get     server: 'cloudflare' } ]
+608 silly addNameRange number 2 { name: 'sodium', range: '>=2.0.3-0 <3.0.0-0', hasData: true }
+609 silly addNameRange versions [ 'sodium',
+609 silly addNameRange   [ '1.0.0',
+609 silly addNameRange     '1.0.1',
+609 silly addNameRange     '1.0.2',
+609 silly addNameRange     '1.0.5',
+609 silly addNameRange     '1.0.6',
+609 silly addNameRange     '1.0.9',
+609 silly addNameRange     '1.0.10',
+609 silly addNameRange     '1.0.11',
+609 silly addNameRange     '1.0.13',
+609 silly addNameRange     '1.0.15',
+609 silly addNameRange     '1.0.16',
+609 silly addNameRange     '1.0.17',
+609 silly addNameRange     '1.0.18',
+609 silly addNameRange     '1.0.19',
+609 silly addNameRange     '1.0.20',
+609 silly addNameRange     '1.0.21',
+609 silly addNameRange     '1.0.22',
+609 silly addNameRange     '1.1.0',
+609 silly addNameRange     '1.1.1',
+609 silly addNameRange     '1.1.2',
+609 silly addNameRange     '1.1.3',
+609 silly addNameRange     '1.1.5',
+609 silly addNameRange     '1.1.6',
+609 silly addNameRange     '1.1.7',
+609 silly addNameRange     '1.1.9',
+609 silly addNameRange     '1.1.10',
+609 silly addNameRange     '1.1.11',
+609 silly addNameRange     '1.1.12',
+609 silly addNameRange     '1.1.13',
+609 silly addNameRange     '1.1.14',
+609 silly addNameRange     '1.1.15',
+609 silly addNameRange     '1.1.16',
+609 silly addNameRange     '1.2.0',
+609 silly addNameRange     '1.2.1',
+609 silly addNameRange     '1.2.2',
+609 silly addNameRange     '1.2.3',
+609 silly addNameRange     '2.0.1',
+609 silly addNameRange     '2.0.3',
+609 silly addNameRange     '3.0.0',
+609 silly addNameRange     '3.0.1',
+609 silly addNameRange     '3.0.2' ] ]
+610 verbose addNamed [ 'sodium', '2.0.3' ]
+611 verbose addNamed [ '2.0.3', '2.0.3' ]
+612 silly lockFile a34ba4c4-sodium-2-0-3 sodium@2.0.3
+613 verbose lock sodium@2.0.3 /root/.npm/a34ba4c4-sodium-2-0-3.lock
+614 silly addNameRange number 2 { name: 'node-opus', range: '>=0.2.7-0 <0.3.0-0', hasData: true }
+615 silly addNameRange versions [ 'node-opus',
+615 silly addNameRange   [ '0.1.0',
+615 silly addNameRange     '0.1.1',
+615 silly addNameRange     '0.1.2',
+615 silly addNameRange     '0.1.3',
+615 silly addNameRange     '0.1.4',
+615 silly addNameRange     '0.1.5',
+615 silly addNameRange     '0.1.6',
+615 silly addNameRange     '0.1.7',
+615 silly addNameRange     '0.1.8',
+615 silly addNameRange     '0.1.9',
+615 silly addNameRange     '0.1.10',
+615 silly addNameRange     '0.1.11',
+615 silly addNameRange     '0.1.12',
+615 silly addNameRange     '0.1.13',
+615 silly addNameRange     '0.2.0',
+615 silly addNameRange     '0.2.1',
+615 silly addNameRange     '0.2.2',
+615 silly addNameRange     '0.2.3',
+615 silly addNameRange     '0.2.4',
+615 silly addNameRange     '0.2.5',
+615 silly addNameRange     '0.2.6',
+615 silly addNameRange     '0.2.7',
+615 silly addNameRange     '0.2.8',
+615 silly addNameRange     '0.2.9',
+615 silly addNameRange     '0.3.0',
+615 silly addNameRange     '0.3.1',
+615 silly addNameRange     '0.3.2',
+615 silly addNameRange     '0.3.3' ] ]
+616 verbose addNamed [ 'node-opus', '0.2.9' ]
+617 verbose addNamed [ '0.2.9', '0.2.9' ]
+618 silly lockFile fd33e158-node-opus-0-2-9 node-opus@0.2.9
+619 verbose lock node-opus@0.2.9 /root/.npm/fd33e158-node-opus-0-2-9.lock
+620 silly lockFile b5999cd8-libsodium-wrappers-0-7-5 libsodium-wrappers@0.7.5
+621 silly lockFile b5999cd8-libsodium-wrappers-0-7-5 libsodium-wrappers@0.7.5
+622 silly lockFile 0a171ec8-bufferutil-4-0-1 bufferutil@4.0.1
+623 silly lockFile 0a171ec8-bufferutil-4-0-1 bufferutil@4.0.1
+624 silly lockFile b0eaa483-libsodium-wrappers-0-7-3 libsodium-wrappers@^0.7.3
+625 silly lockFile b0eaa483-libsodium-wrappers-0-7-3 libsodium-wrappers@^0.7.3
+626 silly lockFile 8685ebc6-bufferutil-4-0-0 bufferutil@^4.0.0
+627 silly lockFile 8685ebc6-bufferutil-4-0-0 bufferutil@^4.0.0
+628 verbose git remote.origin.url git://github.com/discordapp/erlpack
+629 silly lockFile f0d6cf41-discordjs-uws-10-149-0 discordjs/uws@^10.149.0
+630 silly lockFile f0d6cf41-discordjs-uws-10-149-0 discordjs/uws@^10.149.0
+631 silly lockFile 24553a97-opusscript-0-0-6 opusscript@0.0.6
+632 silly lockFile 24553a97-opusscript-0-0-6 opusscript@0.0.6
+633 verbose node_modules/discord.js unbuild
+634 info preuninstall discord.js@11.5.1
+635 silly lockFile ff2cab21-opusscript-0-0-6 opusscript@^0.0.6
+636 silly lockFile ff2cab21-opusscript-0-0-6 opusscript@^0.0.6
+637 silly lockFile a34ba4c4-sodium-2-0-3 sodium@2.0.3
+638 silly lockFile a34ba4c4-sodium-2-0-3 sodium@2.0.3
+639 silly lockFile 225abcb0-sodium-2-0-3 sodium@^2.0.3
+640 silly lockFile 225abcb0-sodium-2-0-3 sodium@^2.0.3
+641 info uninstall discord.js@11.5.1
+642 silly lockFile fd33e158-node-opus-0-2-9 node-opus@0.2.9
+643 silly lockFile fd33e158-node-opus-0-2-9 node-opus@0.2.9
+644 silly lockFile c7384ac0-node-opus-0-2-7 node-opus@^0.2.7
+645 silly lockFile c7384ac0-node-opus-0-2-7 node-opus@^0.2.7
+646 verbose true,/home/pi/CleetusBot/node_modules,/home/pi/CleetusBot/node_modules unbuild discord.js@11.5.1
+647 info postuninstall discord.js@11.5.1
+648 verbose git fetch -a origin (git://github.com/discordapp/erlpack)
+649 verbose git rev-list -n1 master 27cd243b7799a6cf3c0b6b4dcdb49084dc3e6479
+650 verbose resolved git url git://github.com/discordapp/erlpack#27cd243b7799a6cf3c0b6b4dcdb49084dc3e6479
+651 error Error: Method Not Allowed
+651 error     at errorResponse (/usr/share/npm/lib/cache/add-named.js:260:10)
+651 error     at /usr/share/npm/lib/cache/add-named.js:203:12
+651 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+651 error     at Object.oncomplete (fs.js:107:15)
+652 error If you need help, you may report this *entire* log,
+652 error including the npm and node versions, at:
+652 error     <http://github.com/npm/npm/issues>
+653 error System Linux 4.9.35-v7+
+654 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "discord.js"
+655 error cwd /home/pi/CleetusBot
+656 error node -v v0.10.29
+657 error npm -v 1.4.21
+658 error code E405
+659 verbose exit [ 1, true ]

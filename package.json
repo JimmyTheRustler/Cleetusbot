@@ -1,0 +1,24 @@
+{
+  "name": "CleetusBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "commando": "0.0.2",
+    "discord.js": "^11.5.1",
+    "discord.js-commando": "^0.10.0",
+    "ffmpeg": "0.0.4",
+    "nekos.life": "^2.0.5",
+    "node-fetch": "^2.6.0",
+    "opusscript": "0.0.7",
+    "ytdl-core": "^1.0.0"
+  }
+}
