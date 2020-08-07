@@ -45,7 +45,6 @@ module.exports = class whattoplay extends Commando.Command{
         let gameList = [];
         let tmpGameList = [];
         
-
         for(let i = 0; i < steamIds.length; i++){
             let url = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + config.steamKey + "&steamid=" + steamIds[i] + "&format=json";
             let steamObj = await fetchSteamJson(url);
@@ -54,25 +53,21 @@ module.exports = class whattoplay extends Commando.Command{
                 message.channel.send('Uh Oh! Looks like ' + username[i] + ' is a big pussy and has their account set to private! Skipping their games...');
             }
             else{
-                
-                
                 if(!Array.isArray(gameList) || !gameList.length){
-                    for(let i = 0; i < steamObj.response.game_count; i++){
-                        gameList.push(steamObj.response.games[i].appid)
+                    for(let j = 0; j < steamObj.response.game_count; j++){
+                        gameList.push(steamObj.response.games[j].appid);
                     }
                 }
                 else{
-                    for(let i = 0; i < steamObj.response.game_count; i++){
-                        tmpGameList.push(steamObj.response.games[i].appid)
+                    for(let h = 0; h < steamObj.response.game_count; h++){
+                        tmpGameList.push(steamObj.response.games[h].appid);
                     }
                     gameList = _.intersection(gameList, tmpGameList);
                 }
-
             }
-
         }     
-        sqlClearDB();
 
+        sqlClearDB();
         if(gameList.length === 0){
             message.channel.send('No games found');
         }
@@ -81,7 +76,6 @@ module.exports = class whattoplay extends Commando.Command{
                 sqlPushSteamappid(gameList[i]);
             }
             let steamNameObj = await sqlGetSteamNames();
-            
             let output='```';
             for(let i = 0; i < steamNameObj.length; i++){
                 output = output.concat(steamNameObj[i].name + '\n');
@@ -94,8 +88,6 @@ module.exports = class whattoplay extends Commando.Command{
             output = output.concat('```');
             message.channel.send(output);
         }
-        
-        
     }    
 }
 
@@ -107,7 +99,6 @@ async function sqlGetSteamNames(){
             if(err){
                 console.log(err);
             }
-            
             res(results);
         });
     });
