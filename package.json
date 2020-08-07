@@ -19,6 +19,8 @@
     "nekos.life": "^2.0.5",
     "node-fetch": "^2.6.0",
     "opusscript": "0.0.7",
+    "quick.db": "^7.1.1",
+    "underscore": "^1.10.2",
     "ytdl-core": "^1.0.0"
   }
 }

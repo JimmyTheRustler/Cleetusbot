@@ -1,11 +1,19 @@
 const config = require("./config.json"); //contains token and prefix
-//const fs = require('fs'); //filesystem
+const MySQL = require('mysql');
 const Commando = require('discord.js-commando');
 const client = new Commando.Client({
     commandPrefix: config.prefix,
     owner: '159477102960181248',
     disableEveryone: true,
     unknownCommandResponse: false
+});
+
+global.pool = MySQL.createPool({
+  connectionLimit: config.database.connectionLimit,
+  host: config.database.host,
+  user: config.database.user,
+  password:  config.database.password,
+  database:  config.database.database
 });
 
 client.on("error", (e) => {
