@@ -16,7 +16,6 @@ module.exports = class updategamedb extends Commando.Command{
         cli = client;
     }
     async run(message){
-        //console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
         let strt = new Date();
         message.channel.send('Fetching steam catalog...');
         let url = "http://api.steampowered.com/ISteamApps/GetAppList/v2";
@@ -44,16 +43,22 @@ async function fetchSteamJson(url){
 
 async function sqlPushSteamGames(appId, name){
     let tmp;
-    let sql='INSERT INTO steamGames (appId, name) VALUES ('+appId+', \''+name+'\');';
-    tmp = new Promise((res, rej) => {
-        global.pool.query(sql, function (err, results, fields) {    
-            if(err){
-                console.log(err);
-            }
-            //res(results[0].steamId);
+    if(name.length < 80){
+        //name = name.replace(/"/g, '');
+        //name = name.replace(/'/g, '');
+        //name = name.replace(/([\u2700-\u27BF]|[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2011-\u26FF]|\uD83E[\uDD10-\uDDFF])/g, '');
+        name = name.replace(/[^\w\s!?]/g,'');
+        let sql='INSERT INTO steamGames (appId, name) VALUES ('+appId+', \''+name+'\');';
+        tmp = new Promise((res, rej) => {
+            global.pool.query(sql, function (err, results, fields) {    
+                if(err){
+                    console.log(err);
+                }
+                //res(results[0].steamId);
+            });
         });
-    });
-    return await tmp;
+        return await tmp;
+    }
 }
 async function sqlClearDB(){
     let tmp;

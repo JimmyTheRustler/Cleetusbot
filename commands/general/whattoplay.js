@@ -1,8 +1,8 @@
+/* eslint-disable no-undef */
 const Commando = require('discord.js-commando');
 const config = require('../../config.json');
 const _ = require('underscore');
-const fetch = require("node-fetch");
-const MySQL = require('mysql');
+const fetch = require('node-fetch');
 
 module.exports = class whattoplay extends Commando.Command{
     constructor (client){
@@ -36,117 +36,109 @@ module.exports = class whattoplay extends Commando.Command{
                 username.push(userObjs[i].username);
             }
         }
-
+        let usrPromises = [];
         let steamIds = [];
-        for(let i = 0; i < users.length; i++){
-            steamIds.push(await sqlGetSteamId(users[i]));
-        }
+        usrPromises = users.map(id => sqlGetSteamId(id));
+        steamIds = await Promise.all(usrPromises);
+
+        
+        let steamObjArr = [];
+        usrPromises = [];        
+        
+        usrPromises = steamIds.map(id => fetch(`http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${config.steamKey}&steamid=${id}&format=json`).then(res => res.json()));
+        steamObjArr = await Promise.all(usrPromises);
 
         let gameList = [];
         let tmpGameList = [];
-        
-        for(let i = 0; i < steamIds.length; i++){
-            let url = "http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + config.steamKey + "&steamid=" + steamIds[i] + "&format=json";
-            let steamObj = await fetchSteamJson(url);
-
-            if(_.isEmpty(steamObj.response)){
-                message.channel.send('Uh Oh! Looks like ' + username[i] + ' is a big pussy and has their account set to private! Skipping their games...');
+        for(let i = 0; i < steamObjArr.length; i++){
+            if(_.isEmpty(steamObjArr[i].response)){
+                message.channel.send(`Uh Oh! Looks like ${username[i]} is a big pussy and has their account set to private! Skipping their games...`);
             }
             else{
                 if(!Array.isArray(gameList) || !gameList.length){
-                    for(let j = 0; j < steamObj.response.game_count; j++){
-                        gameList.push(steamObj.response.games[j].appid);
+                    for(let j = 0; j < steamObjArr[i].response.game_count; j++){
+                        gameList.push(steamObjArr[i].response.games[j].appid);
                     }
                 }
                 else{
-                    for(let h = 0; h < steamObj.response.game_count; h++){
-                        tmpGameList.push(steamObj.response.games[h].appid);
+                    for(let h = 0; h < steamObjArr[i].response.game_count; h++){
+                        tmpGameList.push(steamObjArr[i].response.games[h].appid);
                     }
                     gameList = _.intersection(gameList, tmpGameList);
+                    tmpGameList = [];
                 }
             }
         }     
+        let sqlWhereQuery = '';
+        for(let i = 0; i < gameList.length; i++){
+            sqlWhereQuery = sqlWhereQuery.concat(`appId=${gameList[i]}`);
+            if(i !== gameList.length-1){
+                sqlWhereQuery = sqlWhereQuery.concat(' OR ');
+            }
+        }
 
-        sqlClearDB();
+        let steamNameObj;
         if(gameList.length === 0){
             message.channel.send('No games found');
         }
         else{
-            for(let i = 0; i < gameList.length; i++){
-                sqlPushSteamappid(gameList[i]);
-            }
-            let steamNameObj = await sqlGetSteamNames();
-            let output='```';
-            for(let i = 0; i < steamNameObj.length; i++){
-                output = output.concat(steamNameObj[i].name + '\n');
+            usrPromises = [];
+            steamNameObj = await sqlGetSteamNames(sqlWhereQuery);
+        }
+
+
+        let steamNameArr = [];
+        for(let i = 0; i < steamNameObj.length; i++){
+            steamNameArr.push(steamNameObj[i].name);
+        }
+        const uniqueSteamNames = new Set(steamNameArr);
+        steamNameArr = [...uniqueSteamNames];
+
+        let output='```';
+        if(steamNameArr.length === 0){
+            output = output.concat('Error retrieving game name list...');
+        }
+        else{
+            for(let i = 0; i < steamNameArr.length; i++){
+                output = output.concat(i+1 + '. ' + steamNameArr[i] + '\n');
                 if(output.length > 1800){
                     output = output.concat('```');
                     message.channel.send(output);
                     output = '```';
                 }
             }
-            output = output.concat('```');
-            message.channel.send(output);
         }
-    }    
-}
+        output = output.concat('```');
+        message.channel.send(output);
+    }
+}    
 
-async function sqlGetSteamNames(){
-    let tmp;
-    let sql='SELECT * FROM cleetusbot.steamGames INNER JOIN tmp ON cleetusbot.steamGames.appId = cleetusbot.tmp.appId;';
-    tmp = new Promise((res, rej) => {
-        global.pool.query(sql,function (err, results, fields) {    
+async function sqlGetSteamNames(whereQuery){
+    let sql=`SELECT * FROM cleetusbot.steamGames WHERE ${whereQuery} ORDER BY name asc;`;
+    return new Promise((res, rej) => {
+        global.pool.query(sql,function (err, results) {    
             if(err){
-                console.log(err);
+                console.log(`sqlGetSteamnames: ${err}`);
+                rej(err);
             }
-            res(results);
+            else{
+                res(results);
+            }
         });
     });
-    return await tmp;
 }
 
 async function sqlGetSteamId(discordid){
-    let tmp;
     let sql='SELECT steamId FROM cleetusbot.steamIds WHERE discordId='+discordid;
-    tmp = new Promise((res, rej) => {
-        global.pool.query(sql, [discordid],function (err, results, fields) {    
+    return new Promise((res, rej) => {
+        global.pool.query(sql, [discordid],function (err, results) {    
             if(err){
-                console.log(err);
+                console.log(`sqlGetSteamID: ${err}`);
+                rej(err);
             }
-            res(results[0].steamId);
-        });
-    });
-    return await tmp;
-}
-
-async function sqlPushSteamappid(appId){
-    let tmp;
-    let sql='INSERT INTO cleetusbot.tmp (appId) VALUES ('+appId+');';
-    tmp = new Promise((res, rej) => {
-        global.pool.query(sql, [appId], function (err, results, fields) {    
-            if(err){
-                console.log(err);
+            else{
+                res(results[0].steamId);
             }
         });
     });
-    return await tmp;
-}
-
-async function fetchSteamJson(url){
-    let response = await fetch(url);
-    let data = await response.json();
-    return data;
-}
-
-async function sqlClearDB(){
-    let tmp;
-    let sql='DELETE FROM cleetusbot.tmp;';
-    tmp = new Promise((res, rej) => {
-        global.pool.query(sql, function (err, results, fields) {    
-            if(err){
-                console.log(err);
-            }
-        });
-    });
-    return await tmp;
 }
